@@ -23,7 +23,7 @@ const Home = () => {
       <HeroTwo />
       <SeamLess />
       <MembersShips />
-      <Card />
+      {/* <Card /> */}
       <PostEmail />
     </div>
   );

@@ -5,12 +5,12 @@ const Exceotional = () => {
   return (
     <div className="w-[90%] mx-auto mt-10 md:mt-20">
       <p
-        className="font-semibold text-[40px] leading-[56px] tracking-[0%]
+        className="font-semibold text-[35px] leading-[56px] tracking-[0%]
 "
       >
         Why Choose{" "}
         <span
-          className=" font-semibold text-[40px] md:text-[60px] leading-[56px] tracking-[0%] text-[#00643C]
+          className=" font-semibold text-[40px]  leading-[56px] tracking-[0%] text-[#00643C]
 "
         >
           Cyberease?

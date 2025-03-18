@@ -19,9 +19,9 @@ const About = () => {
         {/* <AboutNav></AboutNav> */}
         <AboutNavber></AboutNavber>
         <InFo></InFo>
-        <OurTeam></OurTeam>
-        <Opsition></Opsition>
-        <Financial></Financial>
+        {/* <OurTeam></OurTeam> */}
+        {/* <Opsition></Opsition> */}
+        {/* <Financial></Financial> */}
         <ESGSection></ESGSection>
         <PostEmail></PostEmail>
     </div>

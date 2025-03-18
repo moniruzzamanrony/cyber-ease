@@ -39,12 +39,12 @@ const AboutNavber = () => {
   >
     <div className="md:container mx-auto flex justify-between items-center">
       <img src={navicon} alt="Logo" className="hidden md:block" />
-      <div className="hidden md:flex gap-3 text-black bg-white px-12 py-2 rounded-full">
+      <div className="hidden md:flex gap-3 text-black bg-white px-8 py-2 rounded-full">
         {navItems.map((item) => (
           <Link
             key={item.name}
             to={item.path}
-            className={`px-4 py-2 text-lg rounded-md transition-all duration-300 ${
+            className={`px-4 py-2 text-base rounded-md transition-all duration-300 ${
               location.pathname === item.path ? "text-green-900 font-bold" : "hover:text-green-900"
             }`}
           >
@@ -75,7 +75,7 @@ const AboutNavber = () => {
   </nav>
 
   {/* Centered Content */}
-  <div className="w-full flex flex-col items-center h-1/2">
+  <div className="w-full flex flex-col items-center h-1/2 -mt-32 md:mt-0 ">
     <div className="text-white max-w-5xl px-6">
       <p className="text-4xl 2xl:text-5xl font-bold mb-2 tracking-wide">
         Who We Are

@@ -41,12 +41,12 @@ const TachNav= () => {
   >
     <div className="md:container mx-auto flex justify-between items-center">
       <img src={navicon} alt="Logo" className="hidden md:block" />
-      <div className="hidden md:flex gap-3 text-black bg-white px-12 py-2 rounded-full">
+      <div className="hidden md:flex gap-3 text-black bg-white px-8 py-2 rounded-full">
         {navItems.map((item) => (
           <Link
             key={item.name}
             to={item.path}
-            className={`px-4 py-2 text-lg rounded-md transition-all duration-300 ${
+            className={`px-4 py-2 text-base rounded-md transition-all duration-300 ${
               location.pathname === item.path ? "text-green-900 font-bold" : "hover:text-green-900"
             }`}
           >
@@ -78,11 +78,11 @@ const TachNav= () => {
 
   {/* Centered Content */}
   <div className="w-full flex flex-col justify-center h-full ">
-    <div className="text-white max-w-5xl px-6">
-      <p className="text-4xl 2xl:text-5xl font-bold mb-2 tracking-wide text-left drop-shadow-lg lg:pl-32">
+    <div className="text-white max-w-7xl px-6">
+      <p className="text-3xl 2xl:text-5xl font-bold mb-2 tracking-wide text-left drop-shadow-lg lg:pl-32">
       Protect<span className="text-[#00643C]">.</span> Secure<span className="text-[#00643C]">.</span> Thrive<span className="text-[#00643C]">.</span>
       </p>
-      <p className="pt-5 text-left text-white drop-shadow-lg lg:pl-32 ">
+      <p className="pt-5 text-left text-white drop-shadow-lg lg:pl-32 leading-relaxed  ">
       At Cyberease, we stand as an independent technology vendor dedicated to delivering maximum value to our clients. Our best-in-class solutions and accompanying services cover the entire structured product value chain, ensuring comprehensive support at every stage.
       Our unwavering commitment drives us to consistently benchmark our technologies against evolving client needs and industry standards, staying ahead of market demands and surpassing competitors' offerings.
       </p>

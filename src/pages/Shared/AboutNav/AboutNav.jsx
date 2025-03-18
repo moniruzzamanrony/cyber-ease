@@ -30,7 +30,7 @@ const AboutNav = () => {
 
   return (
     <div
-      className="relative  bg-cover bg-center h-[768px]"
+      className="relative  bg-cover bg-center h-[700px] md:h-[768px]"
       style={{ backgroundImage: `url(${background})` }}
     >
       {/* Navbar with dynamic opacity */}
@@ -42,12 +42,12 @@ const AboutNav = () => {
           <img src={navicon} alt="Logo" className="hidden md:block" />
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex gap-3 text-black bg-white px-12 py-2 rounded-full">
+          <div className="hidden md:flex gap-3 text-black bg-white px-8 py-2 rounded-full">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 to={item.path}
-                className={`px-4 py-2 text-lg rounded-md transition-all duration-300 ${
+                className={`px-4 py-2 text-base rounded-md transition-all duration-300 ${
                   location.pathname === item.path ? "text-green-900 font-bold" : "hover:text-green-900"
                 }`}
               >
@@ -82,7 +82,7 @@ const AboutNav = () => {
       </nav>
 
       {/* Centered Content */}
-      <div className="flex  flex-col lg:flex-row  items-center h-full text-center px-1 md:px-24 lg:px-9 pt-32 md:pt-52 lg:pt-0 ">
+      <div className="lg:absolute lg:left-40 flex  flex-col lg:flex-row  items-center h-full text-center px-1 md:px-24 lg:px-9 pt-32 md:pt-52 lg:pt-0  ">
         <div>
           <img src={mainicon} alt="Main Icon" className="h-24 mb-4 lg:mr-28" />
         </div>
@@ -95,6 +95,7 @@ const AboutNav = () => {
           In today's digital landscape, cybersecurity is not an option—it's a necessity. At Cyberease,we provide cutting-edge cybersecurity and IT solutions to protect your business from ever-evolving threats.Our team of experts ensures your systems remain secure, compliant, and resilient against cyberattacks.
           </p>
         </div>
+
 
       </div>
     </div>

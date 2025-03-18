@@ -13,7 +13,7 @@ const Footer = () => {
     <footer className="bg-green-900 text-white py-6 md:py-10">
       <div className="w-[90%]  mx-auto px-4 md:px-6">
         {/* Top Section */}
-        <div className="flex flex-col md:flex-row items-center justify-between border-b border-white pb-6 md:pb-10">
+        <div className="flex flex-col md:flex-row items-center justify-between border-b border-white pb-6 md:pb-6 ">
           {/* Logo & Contact */}
           <div className="text-center md:text-left mb-6 md:mb-0">
             <img
@@ -31,13 +31,13 @@ const Footer = () => {
           </div>
 
           {/* Navigation Links */}
-          <nav className="flex flex-wrap justify-center md:justify-start gap-4 sm:gap-6 text-sm mt-6 md:mt-0">
-            {["Home", "Technology", "About Us", "Careers", "Latest", "Contact"].map(
+          <nav className="flex flex-wrap justify-center md:justify-start gap-4 sm:gap-6 text-sm mt-6 md:mt-10">
+            {["Home", "About Us", "Service", "Contact"].map(
               (item, index) => (
                 <a
                   key={index}
                   href="#"
-                  className="font-medium hover:text-gray-300 transition"
+                  className="font-medium hover:text-gray-300 transition "
                 >
                   {item}
                 </a>
@@ -71,7 +71,7 @@ const Footer = () => {
           </div>
 
           {/* Social Icons */}
-          <div className="flex gap-3 sm:gap-4 mt-4 md:mt-0">
+          <div className="flex gap-3 sm:gap-4 mt-4 md:mt-0 text-base">
             <FaLinkedinIn className="cursor-pointer hover:text-gray-300 transition" />
             <FaSkype className="cursor-pointer hover:text-gray-300 transition" />
             <FaFacebookF className="cursor-pointer hover:text-gray-300 transition" />

@@ -5,12 +5,12 @@ const Operational = () => {
   return (
     <div className="w-[90%] mx-auto mt-10 md:mt-20">
       <p
-        className="font-semibold text-[40px] leading-[56px] tracking-[0%]
+        className="font-semibold text-[35px] leading-[56px] tracking-[0%]
 "
       >
         Operational{" "}
         <span
-          className=" font-semibold text-[60px] leading-[56px] tracking-[0%] text-[#00643C]
+          className=" font-semibold text-[40px] leading-[56px] tracking-[0%] text-[#00643C]
 "
         >
          Excellence & Scalable </span>

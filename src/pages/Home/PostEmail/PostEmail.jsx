@@ -19,9 +19,9 @@ const PostEmail = () => {
 
   return (
     <div className="flex items-center justify-center bg-black text-white   ">
-      <div className="w-[90%]  mx-auto flex flex-col lg:flex-row items-center pt-24 pb-24 gap-6">
+      <div className="w-[90%]  mx-auto flex flex-col lg:flex-row items-center pt-24 pb-24 gap-6 lg:gap-36">
         {/* Left Side Content */}
-        <div className=" mb-6 md:mb-0">
+        <div className=" mb-6 md:mb-0 flex-1">
           <h2 className="text-2xl md:text-3xl font-light">
             Speak to one of our experts to learn how we can help you take your
             business to the next level.
@@ -32,7 +32,7 @@ const PostEmail = () => {
         </div>
 
         {/* Right Side Form */}
-        <div className=" bg-black  rounded-lg">
+        <div className=" bg-black  rounded-lg flex-1">
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* First Name */}
@@ -88,14 +88,14 @@ const PostEmail = () => {
 
             <div className="flex justify-between gap-10">
               {/* Disclaimer */}
-              <p className="text-xs text-gray-400 mt-6">
+              <p className="text-xs text-gray-400 mt-6 max-w-md ">
                 By pressing subscribe you agree to receive newsletters,
                 exclusive personalised events invitations and carefully-curated
                 offers from WSD by Email. You can unsubscribe at any time.
               </p>
               <button
                 type="submit"
-                className="mt-6 border border-white rounded-full w-12 h-12 flex items-center justify-center aspect-square"
+                className="mt-6 border bg-white border-white text-black rounded-full w-12 h-12 flex items-center justify-center aspect-square"
               >
                 ➜
               </button>

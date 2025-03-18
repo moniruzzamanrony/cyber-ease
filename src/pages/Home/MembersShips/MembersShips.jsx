@@ -7,11 +7,11 @@ import cardimg4 from "../../../assets/cardIcon/image4.png";
 
 const MembersShips = () => {
   return (
-    <div className="lg:h-[800px]  mt-20 bg-black">
-      <div className="flex flex-col md:flex-row md:items-center gap-4 text-white justify-evenly pt-3 md:pt-24 pl-10  ">
+    <div className="lg:h-[700px]  mt-20 bg-black/95">
+      <div className="flex flex-col md:flex-row md:items-center gap-4 text-white justify-evenly pt-3 md:pt-20 pl-10  ">
         <div>
           <p
-            className="font-poppins font-extrabold text-[60px] leading-[56px] tracking-[0%] 
+            className="font-poppins font-extrabold text-[40px] leading-[56px] tracking-[0%] 
 "
           >
             250m+
@@ -25,7 +25,7 @@ const MembersShips = () => {
         </div>
         <div>
           <p
-            className="font-poppins font-extrabold text-[60px] leading-[56px] tracking-[0%] 
+            className="font-poppins font-extrabold text-[40px] leading-[56px] tracking-[0%] 
 "
           >
             80m+
@@ -39,7 +39,7 @@ const MembersShips = () => {
         </div>
         <div>
           <p
-            className="font-poppins font-extrabold text-[60px] leading-[56px] tracking-[0%]
+            className="font-poppins font-extrabold text-[40px] leading-[56px] tracking-[0%]
 "
           >
             ~70%
@@ -53,7 +53,7 @@ const MembersShips = () => {
         </div>
       </div>
       <div>
-        <p className="text-white w-[80%] mx-auto text-center pt-10">
+        <p className="text-white w-[80%] mx-auto text-center text-sm pt-10">
           Partnering with Cyberease has been a game-changer for our business.
           Their innovative solutions and expertise have streamlined our
           operations, significantly reducing manual efforts and improving
@@ -98,7 +98,7 @@ const MembersShips = () => {
             />
           </div>
           <hr className="my-4" />
-          <p className="text-center text-white">
+          <p className="text-center text-white text-sm">
             Morningstar is well known for its intensive research and funds data
             with global coverage. WSD has a strategic partnership with
             Morningstar to make this data available to our customers and users.
@@ -113,7 +113,7 @@ const MembersShips = () => {
             />
           </div>
           <hr className="my-4" />
-          <p className="text-center text-white">
+          <p className="text-center text-white text-sm">
             The German Structured Securities Association (Bundesverband für
             strukturierte Wertpapiere, BSW) is the representative body of
             issuers and service providers.
@@ -128,7 +128,7 @@ const MembersShips = () => {
             />
           </div>
           <hr className="my-4" />
-          <p className="text-center text-white">
+          <p className="text-center text-white text-sm">
             SIX Financial Information is a Switzerland-based market data
             information provider with global coverage. WSD works with SIX to
             power numerous solutions with realtime market data.
@@ -143,7 +143,7 @@ const MembersShips = () => {
             />
           </div>
           <hr className="my-4" />
-          <p className="text-center text-white">
+          <p className="text-center text-white text-sm">
             Refinitiv is a global provider of financial markets data and was
             formerly part of Thomson Reuters. WSD partners with Refnitiv to make
             their data available to our customers and users.
