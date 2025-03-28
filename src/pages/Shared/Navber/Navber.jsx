@@ -42,8 +42,6 @@ const Navber = () => {
           <div className="w-[5px] h-[5px] bg-white rounded-full"></div>
           <div className="w-[5px] h-[5px] bg-white rounded-full"></div>
           <div className="w-[5px] h-[5px] bg-white rounded-full"></div>
-         
-          
         </div>
       </div>
     </div>
