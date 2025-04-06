@@ -8,8 +8,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"], // Poppins ফন্ট যুক্ত করা
-        prosto: ["Prosto One", "sans-serif"],
+        prosto: ["Prosto One", "sans-serif"], // Poppins ফন্ট যুক্ত করা
       },
     },
   },

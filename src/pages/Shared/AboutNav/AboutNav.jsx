@@ -30,14 +30,14 @@ const AboutNav = () => {
 
   return (
     <div
-      className="relative  bg-cover bg-center h-[768px]"
+      className="relative  bg-cover bg-center h-[700px] md:h-[768px]"
       style={{ backgroundImage: `url(${background})` }}
     >
       {/* Navbar with dynamic opacity */}
       <nav
-        className={`absolute top-0 left-0 w-full text-white py-4 px-6 transition-all duration-300  bg-opacity-${opacity} mt-5 z-50`}
+        className={`absolute top-0 left-0 w-full text-white py-4 px-6 transition-all duration-300  bg-opacity-${opacity} mt-5 z-50 `}
       >
-        <div className="md:container mx-auto flex justify-between items-center">
+        <div className="md:container mx-auto flex justify-between items-center lg:px-10">
           {/* Logo */}
           <img src={navicon} alt="Logo" className="hidden md:block" />
 
@@ -47,7 +47,7 @@ const AboutNav = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`px-4 py-2 text-lg rounded-md transition-all duration-300 ${
+                className={`px-4 py-2 text-base rounded-md transition-all duration-300 ${
                   location.pathname === item.path ? "text-green-900 font-bold" : "hover:text-green-900"
                 }`}
               >
@@ -70,7 +70,9 @@ const AboutNav = () => {
                 key={item.name}
                 to={item.path}
                 className={`block px-4 py-2 rounded-md transition-all  duration-300 ${
-                  location.pathname === item.path ? " text-green-900 font-bold " : "hover:text-green-900"
+                  location.pathname === item.path
+                    ? " text-green-900 font-bold "
+                    : "hover:text-green-900"
                 }`}
                 onClick={() => setIsOpen(false)}
               >
@@ -82,19 +84,27 @@ const AboutNav = () => {
       </nav>
 
       {/* Centered Content */}
-      <div className="flex flex-col lg:flex-row  items-center h-full px-1 md:px-24 lg:px-9 pt-32 md:pt-52 lg:pt-0">
+      <div className="lg:absolute lg:left-40 flex  flex-col lg:flex-row  items-center h-full text-center px-1 md:px-24 lg:px-9 pt-32 md:pt-52 lg:pt-0  ">
         <div>
           <img src={mainicon} alt="Main Icon" className="h-24 mb-4 lg:mr-28" />
         </div>
         <div className="text-white max-w-sm md:max-w-xl lg:max-w-xl 2xl:max-w-3xl ">
-          <p className="text-4xl 2xl:text-5xl font-bold mb-2 tracking-wide">
-          Cyberease - Your Trusted
-          Cyber Security Partner
+          <p className="text-4xl 2xl:text-5xl font-bold mb-2 tracking-wide lg:leading-[40px]">
+            Cyberease - Your Trusted
+            
+              Cyber Security Partner
+            
           </p>
-          <p className=" pt-5">
-          In today's digital landscape, cybersecurity is not an option—it's a necessity. At Cyberease,we provide cutting-edge cybersecurity and IT solutions to protect your business from ever-evolving threats.Our team of experts ensures your systems remain secure, compliant, and resilient against cyberattacks.
+
+          <p className=" pt-5 lg:leading-[25px]">
+            In today's digital landscape, cybersecurity is not an option—it's a
+            necessity. At Cyberease,we provide cutting-edge cybersecurity and IT
+            solutions to protect your business from ever-evolving threats.Our
+            team of experts ensures your systems remain secure, compliant, and
+            resilient against cyberattacks.
           </p>
         </div>
+
 
       </div>
     </div>
