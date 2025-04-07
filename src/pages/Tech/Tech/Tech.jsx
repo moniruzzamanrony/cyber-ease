@@ -8,7 +8,7 @@ import TachNav from '../../Shared/TachNav/TachNav';
 const Tech = () => {
     useEffect(() => {
       
-      changeTitleAndFavicon('technology');
+      changeTitleAndFavicon('service');
     }, []);
   return (
     <div>

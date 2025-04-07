@@ -8,36 +8,27 @@ import navicon from "../../../assets/sdvgf 1.png";
 const TachNav= () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-  const [opacity, setOpacity] = useState(50); // Default opacity
+  
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      const newOpacity = Math.min(100, 50 + scrollY / 5); // Adjust opacity based on scroll
-      setOpacity(newOpacity);
-    };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Services", path: "/technology" },
+    { name: "Services", path: "/service" },
     { name: "Contact", path: "/contact" },
   ];
 
   return (
 <div
-  className="relative flex items-center justify-center bg-cover bg-center h-[768px] text-center "
+  className="relative flex items-center justify-center bg-cover bg-center h-[768px] text-center"
   style={{ backgroundImage: `url(${background})` }}
 
 >
-<div className="absolute inset-0 bg-black bg-opacity-65"></div>
+<div className="absolute inset-0 bg-black bg-opacity-75"></div>
   {/* Navbar (Same as before) */}
   <nav
-    className={`absolute top-0 left-0 w-full text-white py-4 px-6 transition-all duration-300 bg-opacity-${opacity} mt-5 z-50`}
+    className={`absolute top-0 left-0 w-full text-white py-4 px-6 transition-all duration-300   mt-5 `}
   >
     <div className="md:container mx-auto flex justify-between items-center">
       <img src={navicon} alt="Logo" className="hidden md:block" />
@@ -82,7 +73,7 @@ const TachNav= () => {
       <p className="text-3xl 2xl:text-5xl font-bold mb-2 tracking-wide text-left drop-shadow-lg lg:pl-32">
       Protect<span className="text-[#00643C]">.</span> Secure<span className="text-[#00643C]">.</span> Thrive<span className="text-[#00643C]">.</span>
       </p>
-      <p className="pt-5 text-left text-white drop-shadow-lg lg:pl-32 leading-relaxed  ">
+      <p className="pt-5 text-left text-white drop-shadow-lg lg:pl-32 lg:leading-loose  ">
       At Cyberease, we stand as an independent technology vendor dedicated to delivering maximum value to our clients. Our best-in-class solutions and accompanying services cover the entire structured product value chain, ensuring comprehensive support at every stage.
       Our unwavering commitment drives us to consistently benchmark our technologies against evolving client needs and industry standards, staying ahead of market demands and surpassing competitors' offerings.
       </p>

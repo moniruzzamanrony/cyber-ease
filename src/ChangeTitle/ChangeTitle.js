@@ -8,8 +8,8 @@ export function changeTitleAndFavicon(page) {
     } else if (page === 'about') {
       document.title = "Cyber Ease- About Page";
       document.querySelector("link[rel='icon']").setAttribute('href', icon);
-    }else if (page === 'technology') {
-      document.title = "Cyber Ease- Technology Page";
+    }else if (page === 'service') {
+      document.title = "Cyber Ease- Services Page";
       document.querySelector("link[rel='icon']").setAttribute('href', icon);
     }else if (page === 'contact') {
       document.title = "Cyber Ease- Contact Page";

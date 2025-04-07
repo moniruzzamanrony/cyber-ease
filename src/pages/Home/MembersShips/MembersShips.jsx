@@ -7,11 +7,11 @@ import cardimg4 from "../../../assets/cardIcon/image4.png";
 
 const MembersShips = () => {
   return (
-    <div className="lg:h-[700px]  mt-20 bg-black/95">
-      <div className="flex flex-col md:flex-row md:items-center gap-4 text-white justify-evenly pt-3 md:pt-20 pl-10  ">
+    <div className="lg:h-[500px]  mt-20 bg-black/95">
+      <div className="flex flex-col md:flex-row md:items-center gap-4 text-white justify-evenly pt-3 md:pt-28  text-center  ">
         <div>
           <p
-            className="font-poppins font-extrabold text-[40px] leading-[56px] tracking-[0%] 
+            className=" font-extrabold text-[40px] leading-[56px] tracking-[0%] 
 "
           >
             250m+
@@ -25,7 +25,7 @@ const MembersShips = () => {
         </div>
         <div>
           <p
-            className="font-poppins font-extrabold text-[40px] leading-[56px] tracking-[0%] 
+            className=" font-extrabold text-[40px] leading-[56px] tracking-[0%] 
 "
           >
             80m+
@@ -39,7 +39,7 @@ const MembersShips = () => {
         </div>
         <div>
           <p
-            className="font-poppins font-extrabold text-[40px] leading-[56px] tracking-[0%]
+            className=" font-extrabold text-[40px] leading-[56px] tracking-[0%]
 "
           >
             ~70%
@@ -53,7 +53,7 @@ const MembersShips = () => {
         </div>
       </div>
       <div>
-        <p className="text-white w-[80%] mx-auto text-center text-sm pt-10">
+        <p className="text-white w-[80%] md:w-[70%] mx-auto text-center text- pt-10">
           Partnering with Cyberease has been a game-changer for our business.
           Their innovative solutions and expertise have streamlined our
           operations, significantly reducing manual efforts and improving
@@ -72,23 +72,15 @@ const MembersShips = () => {
           <FaArrowLeft className="text-white" />
         </button>
       </div>
-      <p
-        className="text-white pb-6 mt-10 font-extrabold text-[35px] leading-[33px] tracking-[0%] text-center flex items-center justify-center
-"
-      >
-        Our partners and memberships
-      </p>
-      {/* 
-      <div>
-        <img src={cardimg1} alt="" />
-        <hr />
-        <p>
-          Morningstar is well known for its intensive research and funds data
-          with global coverage. WSD has a strategic partnership with Morningstar
-          to make this data available to our customers and users.
-        </p>
-      </div> */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-[90%] mx-auto pb-6  ">
+      <div className="flex items-center justify-center gap-3 mt-5 pb-5">
+        <div className="w-2 h-2 rounded-full border-2 border-white"></div>
+        <div className="w-2 h-2 rounded-full border-2 border-white"></div>
+        <div className="w-2 h-2 rounded-full border-2 border-white"></div>
+        <div className="w-2 h-2 rounded-full border-2 border-white "></div>
+  
+      </div>
+
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-[90%] mx-auto pb-6  ">
         <div className="rounded-lg shadow-lg">
           <div className="flex justify-center">
             <img
@@ -149,7 +141,7 @@ const MembersShips = () => {
             their data available to our customers and users.
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

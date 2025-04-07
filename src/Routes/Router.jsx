@@ -26,7 +26,7 @@ import NotFoundPage from "../pages/Shared/NotFoundPage";
 
         },
         {
-            path:'/technology',
+            path:'/service',
             element:<Tech></Tech>
 
         },

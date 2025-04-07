@@ -24,7 +24,7 @@ const AboutNavber = () => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Services", path: "/technology" },
+    { name: "Services", path: "/service" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -80,7 +80,7 @@ const AboutNavber = () => {
       <p className="text-4xl 2xl:text-5xl font-bold mb-2 tracking-wide">
         Who We Are
       </p>
-      <p className="pt-5">
+      <p className="pt-5 lg:leading-loose">
         At Cyberease, we are dedicated to safeguarding businesses against cyber threats. Our team of skilled professionals specializes in cybersecurity, IT infrastructure, and cloud security. With a customer-centric approach, we help organizations build robust security postures through proactive measures and advanced technologies.
       </p>
     </div>

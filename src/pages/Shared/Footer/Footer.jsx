@@ -22,7 +22,7 @@ const Footer = () => {
               className="mx-auto md:mx-0 w-32 md:w-40"
             />
           </div>
-          <div className="text-center md:text-left text-sm">
+          <div className="text-center md:text-left text-sm leading-loose">
             <p className="mt-2 md:mt-0">
               info@cyberease.biz | Phone: +880453785274
             </p>

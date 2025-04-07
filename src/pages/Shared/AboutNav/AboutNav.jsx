@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 import background from "/image/home-hero.png";
@@ -8,36 +8,27 @@ import mainicon from "../../../assets/mainicon.png";
 const AboutNav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-  const [opacity, setOpacity] = useState(50); // Default opacity
+  
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      const newOpacity = Math.min(100, 50 + scrollY / 5); // Adjust opacity based on scroll
-      setOpacity(newOpacity);
-    };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Services", path: "/technology" },
+    { name: "Services", path: "/service" },
     { name: "Contact", path: "/contact" },
   ];
 
   return (
     <div
-      className="relative  bg-cover bg-center h-[700px] md:h-[768px]"
+      className="relative  bg-cover bg-center h-[650px] md:h-[700px] "
       style={{ backgroundImage: `url(${background})` }}
     >
       {/* Navbar with dynamic opacity */}
       <nav
-        className={`absolute top-0 left-0 w-full text-white py-4 px-6 transition-all duration-300  bg-opacity-${opacity} mt-5 z-50 `}
+        className={`absolute top-0 left-0 w-full text-white py-4 px-6 transition-all duration-300 mt-6 z-10 `}
       >
-        <div className="md:container mx-auto flex justify-between items-center lg:px-10">
+        <div className="w-[90%] mx-auto flex justify-between items-center lg:px-10">
           {/* Logo */}
           <img src={navicon} alt="Logo" className="hidden md:block" />
 
@@ -84,24 +75,18 @@ const AboutNav = () => {
       </nav>
 
       {/* Centered Content */}
-      <div className="lg:absolute lg:left-40 flex  flex-col lg:flex-row  items-center h-full text-center px-1 md:px-24 lg:px-9 pt-32 md:pt-52 lg:pt-0  ">
+      <div className="lg:absolute lg:left-40 flex  flex-col lg:flex-row  items-center h-full text-center  pt-20 md:pt-52 lg:pt-0  ">
         <div>
-          <img src={mainicon} alt="Main Icon" className="h-24 mb-4 lg:mr-28" />
+          <img src={mainicon} alt="Main Icon" className="h-24 mb-4 lg:mr-2 2xl:mr-20" />
         </div>
-        <div className="text-white max-w-sm md:max-w-xl lg:max-w-xl 2xl:max-w-3xl ">
-          <p className="text-4xl 2xl:text-5xl font-bold mb-2 tracking-wide lg:leading-[40px]">
-            Cyberease - Your Trusted
-            
-              Cyber Security Partner
+        <div className="text-white max-w-sm md:max-w-xl lg:max-w-xl 2xl:max-w-3xl p-2 ">
+          <p className="text-3xl md:text-4xl 2xl:text-5xl font-bold mb-2 tracking-wide lg:text-left ">
+            <span className="lg:leading-[60px] ">Cyberease - Your Trusted  Cyber Security Partner</span>
             
           </p>
-
-          <p className=" pt-5 lg:leading-[25px]">
-            In today's digital landscape, cybersecurity is not an option—it's a
-            necessity. At Cyberease,we provide cutting-edge cybersecurity and IT
-            solutions to protect your business from ever-evolving threats.Our
-            team of experts ensures your systems remain secure, compliant, and
-            resilient against cyberattacks.
+ 
+          <p className=" pt-5 lg:leading-[30px] lg:text-left">
+          In today's digital landscape, cybersecurity is not an option—it's a necessity. At Cyberease,we provide cutting-edge cybersecurity and IT solutions to protect your business from ever-evolving threats.Our team of experts ensures your systems remain secure, compliant, and resilient against cyberattacks.
           </p>
         </div>
 
