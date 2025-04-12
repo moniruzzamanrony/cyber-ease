@@ -9,6 +9,7 @@ import PostEmail from "../PostEmail/PostEmail";
 import Card from "../Card/Card";
 import { changeTitleAndFavicon } from "../../../ChangeTitle/ChangeTitle";
 import AboutNav from "../../Shared/AboutNav/AboutNav";
+import Footer from "../../Shared/Footer/Footer";
 
 const Home = () => {
   useEffect(() => {
@@ -24,7 +25,8 @@ const Home = () => {
       <SeamLess />
       <MembersShips />
       {/* <Card /> */}
-      <PostEmail />
+      <PostEmail  />
+      <Footer/>
     </div>
   );
 };

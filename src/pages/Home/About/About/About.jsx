@@ -8,12 +8,40 @@ import ESGSection from './ESGSection/ESGSection';
 import PostEmail from '../../PostEmail/PostEmail';
 import { changeTitleAndFavicon } from '../../../../ChangeTitle/ChangeTitle';
 import AboutNavber from '../../../Shared/AboutNavber/AboutNavber';
+import Footer from '../../../Shared/Footer/Footer';
+import { useLocation } from 'react-router-dom';
 
 const About = () => {
     useEffect(() => {
       
       changeTitleAndFavicon('about');
     }, []);
+    const location = useLocation();
+
+    console.log("object",location);
+
+    useEffect(() => {
+      const scrollToHash = () => {
+        if (location.hash) {
+          const target = document.querySelector(location.hash);
+          if (target) {
+            setTimeout(() => {
+              target.scrollIntoView();
+            }, ); 
+          }
+        }
+      };
+  
+      scrollToHash();
+  
+      
+      const unlisten = () => {
+        window.addEventListener("hashchange", scrollToHash);
+      };
+  
+      unlisten();
+      return () => window.removeEventListener("hashchange", scrollToHash);
+    }, [location]);
   return (
     <div>
         {/* <AboutNav></AboutNav> */}
@@ -23,7 +51,8 @@ const About = () => {
         {/* <Opsition></Opsition> */}
         {/* <Financial></Financial> */}
         <ESGSection></ESGSection>
-        <PostEmail></PostEmail>
+        <PostEmail id="contact-section" ></PostEmail>
+        <Footer/>
     </div>
   );
 };

@@ -9,8 +9,7 @@ const Contact = () => {
   }, []);
   return (
     <div>
-      <AboutNav></AboutNav>
-      <PostEmail></PostEmail>
+
     </div>
   );
 };

@@ -1,7 +1,9 @@
 import { useForm } from "react-hook-form";
 import axios from "axios";
 
-const PostEmail = () => {
+const PostEmail = ({id}) => {
+
+  console.log("id",id);
   const { register, handleSubmit, reset } = useForm();
 
   const onSubmit = async (data) => {
@@ -18,7 +20,7 @@ const PostEmail = () => {
   };
 
   return (
-    <div className="flex items-center justify-center bg-black text-white   ">
+    <div id="contact-section" className="flex items-center justify-center bg-black text-white   ">
       <div className="w-[90%]  mx-auto flex flex-col lg:flex-row items-center pt-24 pb-24 gap-6 lg:gap-36">
         {/* Left Side Content */}
         <div className=" mb-6 md:mb-0 flex-1">

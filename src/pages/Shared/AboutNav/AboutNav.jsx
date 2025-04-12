@@ -8,15 +8,18 @@ import mainicon from "../../../assets/mainicon.png";
 const AboutNav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-  
 
-
-
+  // const navItems = [
+  //   { name: "Home", path: "/" },
+  //   { name: "About", path: "/about" },
+  //   { name: "Services", path: "/service" },
+  //   { name: "Contact", path: "/contact" },
+  // ];
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Services", path: "/service" },
-    { name: "Contact", path: "/contact" },
+    { name: "Contact", path: "/about#contact-section" },
   ];
 
   return (
@@ -34,7 +37,7 @@ const AboutNav = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-3 text-black bg-white px-12 py-2 rounded-full">
-            {navItems.map((item) => (
+            {/* {navItems.map((item) => (
               <Link
                 key={item.name}
                 to={item.path}
@@ -44,7 +47,30 @@ const AboutNav = () => {
               >
                 {item.name}
               </Link>
-            ))}
+            ))} */}
+            {navItems.map((item) =>
+              item.name === "Contact" ? (
+                <a
+                  key={item.name}
+                  href={item.path}
+                  className={`px-4 py-2 text-base rounded-md transition-all duration-300 hover:text-green-900`}
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className={`px-4 py-2 text-base rounded-md transition-all duration-300 ${
+                    location.pathname === item.path
+                      ? "text-green-900 font-bold"
+                      : "hover:text-green-900"
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              )
+            )}
           </div>
 
           {/* Mobile Menu Button */}
@@ -77,20 +103,27 @@ const AboutNav = () => {
       {/* Centered Content */}
       <div className="lg:absolute lg:left-40 flex  flex-col lg:flex-row  items-center h-full text-center  pt-20 md:pt-52 lg:pt-0  ">
         <div>
-          <img src={mainicon} alt="Main Icon" className="h-24 mb-4 lg:mr-2 2xl:mr-20" />
+          <img
+            src={mainicon}
+            alt="Main Icon"
+            className="h-24 mb-4 lg:mr-2 2xl:mr-20"
+          />
         </div>
         <div className="text-white max-w-sm md:max-w-xl lg:max-w-xl 2xl:max-w-3xl p-2 ">
           <p className="text-3xl md:text-4xl 2xl:text-5xl font-bold mb-2 tracking-wide lg:text-left ">
-            <span className="lg:leading-[60px] ">Cyberease - Your Trusted  Cyber Security Partner</span>
-            
+            <span className="lg:leading-[60px] ">
+              Cyberease - Your Trusted Cyber Security Partner
+            </span>
           </p>
- 
+
           <p className=" pt-5 lg:leading-[30px] lg:text-left">
-          In today's digital landscape, cybersecurity is not an option—it's a necessity. At Cyberease,we provide cutting-edge cybersecurity and IT solutions to protect your business from ever-evolving threats.Our team of experts ensures your systems remain secure, compliant, and resilient against cyberattacks.
+            In today's digital landscape, cybersecurity is not an option—it's a
+            necessity. At Cyberease,we provide cutting-edge cybersecurity and IT
+            solutions to protect your business from ever-evolving threats.Our
+            team of experts ensures your systems remain secure, compliant, and
+            resilient against cyberattacks.
           </p>
         </div>
-
-
       </div>
     </div>
   );

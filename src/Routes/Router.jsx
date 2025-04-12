@@ -8,6 +8,7 @@ import About from "../pages/Home/About/About/About";
 import Tech from "../pages/Tech/Tech/Tech";
 import Contact from "../pages/Contact/Contact";
 import NotFoundPage from "../pages/Shared/NotFoundPage";
+import PostEmail from "../pages/Home/PostEmail/PostEmail";
 
 
   export const router = createBrowserRouter([
@@ -30,11 +31,11 @@ import NotFoundPage from "../pages/Shared/NotFoundPage";
             element:<Tech></Tech>
 
         },
-        {
-            path:'/contact',
-            element:<Contact></Contact>
+        // {
+        //     path:'/contact',
+        //     element:<PostEmail></PostEmail>
 
-        }
+        // }
 
       ]   
     },
