@@ -53,7 +53,7 @@ const MembersShips = () => {
         </div>
       </div>
       <div>
-        <p className="text-white w-[80%] md:w-[70%] mx-auto text-center text- pt-10">
+        <p className="text-white w-[80%] md:w-[70%] mx-auto text-center text-justify pt-10">
           Partnering with Cyberease has been a game-changer for our business.
           Their innovative solutions and expertise have streamlined our
           operations, significantly reducing manual efforts and improving

@@ -18,7 +18,7 @@ const TestimonialSection = () => {
         </div>
   
         {/* Testimonial Text */}
-        <p className="mt-6 text-gray-700 text-lg leading-relaxed">
+        <p className="mt-6 text-gray-700 text-lg leading-relaxed text-justify">
         Partnering with Cyberease has been a game-changer for our business. Their innovative solutions and expertise have streamlined our operations, significantly reducing manual efforts and improving efficiency. The team's commitment to understanding our unique challenges and delivering tailored results is truly commendable. Cyberease is more than a service provider—they are a trusted partner in our growth journey.
         </p>
   

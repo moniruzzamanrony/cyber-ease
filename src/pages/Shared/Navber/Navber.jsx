@@ -7,7 +7,7 @@ import { FaBarsStaggered } from "react-icons/fa6";
 const Navber = () => {
   return (
     <div
-      className="relative bg-cover bg-center h-[768px]  "
+      className="relative bg-cover bg-center h-screen  "
       style={{ backgroundImage: `url(${background})` }}
     >
       {/* Navbar Icons (Top Section) */}

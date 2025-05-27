@@ -16,7 +16,7 @@ const SeamLess = () => {
           Straight-Through </span>
         Processing
       </p>
-      <p className="mt-4 text-[rgba(0,0,0,0.82)]">
+      <p className="mt-4 text-[rgba(0,0,0,0.82)] text-justify">
         At Cyberease, precision drives our approach to product development and
         management, enabling the delivery of STP solutions tailored to our
         clients' needs. Our

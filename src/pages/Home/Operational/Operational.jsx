@@ -16,7 +16,7 @@ const Operational = () => {
          Excellence & Scalable </span>
         Solutions
       </p>
-      <p className="mt-4 text-[rgba(0,0,0,0.82)]">
+      <p className="mt-4 text-[rgba(0,0,0,0.82)]  text-justify">
       At Cyberease, we design, deploy, and manage our products with unmatched
         <span className="font-bold"> precision</span>Our cloud
         strategy delivers{" "}

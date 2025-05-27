@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 import background from "/image/tach.png";
@@ -22,7 +22,7 @@ const TachNav= () => {
 
   return (
 <div
-  className="relative flex items-center justify-center bg-cover bg-center h-[768px] text-center"
+  className="relative flex items-center justify-center bg-cover bg-center h-screen text-center"
   style={{ backgroundImage: `url(${background})` }}
 
 >
@@ -107,7 +107,7 @@ const TachNav= () => {
       <p className="text-3xl 2xl:text-5xl font-bold mb-2 tracking-wide text-left drop-shadow-lg lg:pl-32">
       Protect<span className="text-[#00643C]">.</span> Secure<span className="text-[#00643C]">.</span> Thrive<span className="text-[#00643C]">.</span>
       </p>
-      <p className="pt-5 text-left text-white drop-shadow-lg lg:pl-32 lg:leading-loose  ">
+      <p className="pt-5 text-justify text-white drop-shadow-lg lg:pl-32 lg:leading-loose  ">
       At Cyberease, we stand as an independent technology vendor dedicated to delivering maximum value to our clients. Our best-in-class solutions and accompanying services cover the entire structured product value chain, ensuring comprehensive support at every stage.
       Our unwavering commitment drives us to consistently benchmark our technologies against evolving client needs and industry standards, staying ahead of market demands and surpassing competitors' offerings.
       </p>

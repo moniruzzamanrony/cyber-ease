@@ -116,7 +116,7 @@ const AboutNav = () => {
             </span>
           </p>
 
-          <p className=" pt-5 lg:leading-[30px] lg:text-left">
+          <p className=" pt-5 lg:leading-[30px] text-left  md:text-justify">
             In today's digital landscape, cybersecurity is not an option—it's a
             necessity. At Cyberease,we provide cutting-edge cybersecurity and IT
             solutions to protect your business from ever-evolving threats.Our

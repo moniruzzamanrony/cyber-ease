@@ -111,7 +111,7 @@ const AboutNavber = () => {
           <p className="text-4xl 2xl:text-5xl font-bold mb-2 tracking-wide">
             Who We Are
           </p>
-          <p className="pt-5 lg:leading-loose">
+          <p className="pt-5 lg:leading-loose text-justify">
             At Cyberease, we are dedicated to safeguarding businesses against
             cyber threats. Our team of skilled professionals specializes in
             cybersecurity, IT infrastructure, and cloud security. With a

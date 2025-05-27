@@ -3,6 +3,8 @@ import axios from "axios";
 
 const PostEmail = ({id}) => {
 
+
+
   console.log("id",id);
   const { register, handleSubmit, reset } = useForm();
 
