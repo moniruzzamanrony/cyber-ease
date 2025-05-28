@@ -5,9 +5,11 @@ import background from "/image/home-hero.png";
 import navicon from "../../../assets/sdvgf 1.png";
 import mainicon from "../../../assets/mainicon.png";
 
-const AboutNav = () => {
+const AboutNav = ({ data }) => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+
+  
 
   // const navItems = [
   //   { name: "Home", path: "/" },
@@ -109,10 +111,10 @@ const AboutNav = () => {
             className="h-24 mb-4 lg:mr-2 2xl:mr-20"
           />
         </div>
-        <div className="text-white max-w-sm md:max-w-xl lg:max-w-xl 2xl:max-w-3xl p-2 ">
+        {/* <div className="text-white max-w-sm md:max-w-xl lg:max-w-xl 2xl:max-w-3xl p-2 ">
           <p className="text-3xl md:text-4xl 2xl:text-5xl font-bold mb-2 tracking-wide lg:text-left ">
             <span className="lg:leading-[60px] ">
-              Cyberease - Your Trusted Cyber Security Partner
+              {data?.headerTitle || 'Loading...'}
             </span>
           </p>
 
@@ -123,6 +125,21 @@ const AboutNav = () => {
             team of experts ensures your systems remain secure, compliant, and
             resilient against cyberattacks.
           </p>
+        </div> */}
+        <div className="text-white max-w-sm md:max-w-xl lg:max-w-xl 2xl:max-w-3xl p-2">
+          {data?.length > 0 && (
+            <>
+              <p className="text-3xl md:text-4xl 2xl:text-5xl font-bold mb-2 tracking-wide lg:text-left">
+                <span className="lg:leading-[60px]">
+                  {data[0]?.headerTitle}
+                </span>
+              </p>
+
+              <p className="pt-5 lg:leading-[30px] text-left md:text-justify">
+                {data[0]?.headerSubTitle}
+              </p>
+            </>
+          )}
         </div>
       </div>
     </div>

@@ -1,11 +1,7 @@
 import React from "react";
 import { FaArrowLeft, FaArrowRightLong } from "react-icons/fa6";
-import cardimg1 from "../../../assets/cardIcon/image1.png";
-import cardimg2 from "../../../assets/cardIcon/image2.png";
-import cardimg3 from "../../../assets/cardIcon/image3.png";
-import cardimg4 from "../../../assets/cardIcon/image4.png";
 
-const MembersShips = () => {
+const MembersShips = ({ data }) => {
   return (
     <div className="lg:h-[500px]  mt-20 bg-black/95">
       <div className="flex flex-col md:flex-row md:items-center gap-4 text-white justify-evenly pt-3 md:pt-28  text-center  ">
@@ -14,7 +10,8 @@ const MembersShips = () => {
             className=" font-extrabold text-[40px] leading-[56px] tracking-[0%] 
 "
           >
-            250m+
+            {data[0]?.riskCalPerformed}
+            m+
           </p>
           <p
             className=" font-medium text-[10px] 
@@ -28,7 +25,7 @@ const MembersShips = () => {
             className=" font-extrabold text-[40px] leading-[56px] tracking-[0%] 
 "
           >
-            80m+
+            {data[0]?.dcGeneratedPerYear}m+
           </p>
           <p
             className=" font-medium text-[10px] 
@@ -42,7 +39,7 @@ const MembersShips = () => {
             className=" font-extrabold text-[40px] leading-[56px] tracking-[0%]
 "
           >
-            ~70%
+            ~{data[0]?.riskCalPerformed2}%
           </p>
           <p
             className=" font-medium text-[10px] 
@@ -54,13 +51,7 @@ const MembersShips = () => {
       </div>
       <div>
         <p className="text-white w-[80%] md:w-[70%] mx-auto text-center text-justify pt-10">
-          Partnering with Cyberease has been a game-changer for our business.
-          Their innovative solutions and expertise have streamlined our
-          operations, significantly reducing manual efforts and improving
-          efficiency. The team's commitment to understanding our unique
-          challenges and delivering tailored results is truly commendable.
-          Cyberease is more than a service provider—they are a trusted partner
-          in our growth journey.
+          {data[0]?.performedSubTitle}
         </p>
       </div>
       <div className="flex items-center justify-center mt-10 gap-3">
@@ -77,7 +68,6 @@ const MembersShips = () => {
         <div className="w-2 h-2 rounded-full border-2 border-white"></div>
         <div className="w-2 h-2 rounded-full border-2 border-white"></div>
         <div className="w-2 h-2 rounded-full border-2 border-white "></div>
-  
       </div>
 
       {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-[90%] mx-auto pb-6  ">

@@ -1,7 +1,7 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-const SeamLess = () => {
+const SeamLess = ({data}) => {
   return (
     <div className="w-[90%] mx-auto mt-10 md:mt-20">
       <p
@@ -16,7 +16,7 @@ const SeamLess = () => {
           Straight-Through </span>
         Processing
       </p>
-      <p className="mt-4 text-[rgba(0,0,0,0.82)] text-justify">
+      {/* <p className="mt-4 text-[rgba(0,0,0,0.82)] text-justify">
         At Cyberease, precision drives our approach to product development and
         management, enabling the delivery of STP solutions tailored to our
         clients' needs. Our
@@ -27,6 +27,9 @@ const SeamLess = () => {
         hybrid cloud platform, we
         <span className="font-bold">seamlessly integrate</span>with the unique
         and evolving demands of our valued customers.
+      </p> */}
+      <p className="mt-4 text-[rgba(0,0,0,0.82)] text-justify">
+{data[0]?.seamlessProcessing}
       </p>
       <button className="flex items-center p-3  bg-transparent border-2 border-gray-400  rounded-full transition duration-300 mt-8">
         <FaArrowRightLong />
