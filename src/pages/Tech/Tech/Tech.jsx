@@ -9,7 +9,7 @@ import axios from "axios";
 import ListSkeleton from "../../Shared/ListSkeleton";
 
 const Tech = () => {
-  const [data, setData] = useState(null); // for storing API data
+  const [data, setData] = useState([]); // for storing API data
   const [loading, setLoading] = useState(true); // loading state
   const [error, setError] = useState(null); // error state
   useEffect(() => {
@@ -35,15 +35,15 @@ const Tech = () => {
     fetchData();
   }, [apiUrl]);
 
-  if (loading) {
-    return <ListSkeleton></ListSkeleton>;
-  }
+  // if (loading) {
+  //   return <ListSkeleton></ListSkeleton>;
+  // }
   return (
     <div>
       <TachNav data={data}></TachNav>
       <Issuers data={data}></Issuers>
       <LiveCycle data={data}></LiveCycle>
-      <TestimonialSection data={data}></TestimonialSection>
+      <TestimonialSection loading={loading} data={data}></TestimonialSection>
       <Footer />
     </div>
   );

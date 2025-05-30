@@ -1,7 +1,13 @@
 import React from "react";
 import { FaArrowLeft, FaArrowRightLong } from "react-icons/fa6";
+import ListSkeleton from "../../Shared/ListSkeleton";
 
-const MembersShips = ({ data }) => {
+const MembersShips = ({ data,loading }) => {
+
+    if (loading) {
+  return <ListSkeleton></ListSkeleton>;
+}
+
   return (
     <div className="lg:h-[500px]  mt-20 bg-black/95">
       <div className="flex flex-col md:flex-row md:items-center gap-4 text-white justify-evenly pt-3 md:pt-28  text-center  ">

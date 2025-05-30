@@ -1,4 +1,9 @@
-const TestimonialSection = ({ data }) => {
+import ListSkeleton from "../../Shared/ListSkeleton";
+
+const TestimonialSection = ({ data,loading }) => {
+    if (loading) {
+    return <ListSkeleton></ListSkeleton>;
+  }
   return (
     <div className="w-[90%] mx-auto text-center py-10 md:py-28 px-4">
       {/* Statistics Section */}

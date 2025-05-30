@@ -14,7 +14,7 @@ import axios from "axios";
 import ListSkeleton from "../../Shared/ListSkeleton";
 
 const Home = () => {
-  const [data, setData] = useState(null); // for storing API data
+  const [data, setData] = useState([]); // for storing API data
   const [loading, setLoading] = useState(true); // loading state
   const [error, setError] = useState(null); // error state
 
@@ -22,7 +22,7 @@ const Home = () => {
     changeTitleAndFavicon("home");
   }, []);
 
-  console.log("data", data);
+  console.log("datdda", error);
 
   const apiUrl = import.meta.env.VITE_API_ENDPOINT;
   useEffect(() => {
@@ -41,9 +41,9 @@ const Home = () => {
     fetchData();
   }, [apiUrl]);
 
-  if (loading) {
-  return <ListSkeleton></ListSkeleton>;
-}
+//   if (loading) {
+//   return <ListSkeleton></ListSkeleton>;
+// }
 
   return (
     <div>
@@ -53,7 +53,7 @@ const Home = () => {
       <Operational data={data} />
       <HeroTwo />
       <SeamLess data={data} />
-      <MembersShips data={data} />
+      <MembersShips loading={loading} data={data} />
       {/* <Card /> */}
       <PostEmail />
       <Footer />

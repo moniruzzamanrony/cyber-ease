@@ -14,7 +14,7 @@ import axios from "axios";
 import ListSkeleton from "../../../Shared/ListSkeleton";
 
 const About = () => {
-  const [data, setData] = useState(null); // for storing API data
+  const [data, setData] = useState([]); // for storing API data
   const [loading, setLoading] = useState(true); // loading state
   const [error, setError] = useState(null); // error state
 
@@ -66,9 +66,7 @@ const About = () => {
     fetchData();
   }, [apiUrl]);
 
-  if (loading) {
-    return <ListSkeleton></ListSkeleton>;
-  }
+
   return (
     <div>
       {/* <AboutNav></AboutNav> */}
@@ -77,7 +75,7 @@ const About = () => {
       {/* <OurTeam></OurTeam> */}
       {/* <Opsition></Opsition> */}
       {/* <Financial></Financial> */}
-      <ESGSection data={data}></ESGSection>
+      <ESGSection loading={loading} data={data}></ESGSection>
       <PostEmail id="contact-section"></PostEmail>
       <Footer />
     </div>

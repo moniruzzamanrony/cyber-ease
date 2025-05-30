@@ -24,7 +24,7 @@ const AboutNavber = ({data}) => {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Services", path: "/service" },
-    { name: "Contact", path: "/about#contact-section" },
+    // { name: "Contact", path: "/about#contact-section" },
   ];
 
   return (
