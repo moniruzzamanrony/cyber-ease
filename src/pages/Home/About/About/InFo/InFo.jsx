@@ -6,17 +6,17 @@ const InFo = ({data}) => {
         {/* 12 Locations */}
         <div>
           <h2 className="text-5xl font-bold"> {data[0]?.locationAcross}</h2>
-          <p className="text-gray-600">locations across multiple timezones</p>
+          <p className="">locations across multiple timezones</p>
         </div>
         {/* 27% Market Share */}
         <div>
           <h2 className="text-5xl font-bold">~{data[0]?.marketShare}</h2>
-          <p className="text-gray-600">market share</p>
+          <p className="">market share</p>
         </div>
         {/* 250 Employees */}
         <div>
           <h2 className="text-5xl font-bold">{data[0]?.employeesAndContractors}</h2>
-          <p className="text-gray-600">employees and contractors</p>
+          <p className="">employees and contractors</p>
         </div>
       </div>
 
@@ -27,7 +27,7 @@ const InFo = ({data}) => {
     {/* Mission */}
     <div className="max-w-md mx-auto">
       <h3 className="text-4xl font-bold mb-6">Mission.</h3>
-      <p className="text-gray-600 mt-2">
+      <p className=" mt-2">
 
         {data[0]?.mission}
       </p>
@@ -36,7 +36,7 @@ const InFo = ({data}) => {
     {/* Vision */}
     <div className="max-w-md mx-auto">
       <h3 className="text-4xl font-bold mb-6">Vision.</h3>
-      <p className="text-gray-600 mt-2">
+      <p className=" mt-2">
 
          {data[0]?.vision}
       </p>

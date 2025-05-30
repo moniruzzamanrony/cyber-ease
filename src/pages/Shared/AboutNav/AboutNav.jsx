@@ -9,8 +9,6 @@ const AboutNav = ({ data }) => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
-  
-
   // const navItems = [
   //   { name: "Home", path: "/" },
   //   { name: "About", path: "/about" },
@@ -19,8 +17,9 @@ const AboutNav = ({ data }) => {
   // ];
   const navItems = [
     { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
     { name: "Services", path: "/service" },
+    { name: "About", path: "/about" },
+    
     // { name: "Contact", path: "/about#contact-section" },
   ];
 
@@ -35,7 +34,13 @@ const AboutNav = ({ data }) => {
       >
         <div className="w-[90%] mx-auto flex justify-between items-center lg:px-10">
           {/* Logo */}
-          <img src={navicon} alt="Logo" className="hidden md:block" />
+          <Link to="/">
+            <img
+              src={navicon}
+              alt="Logo"
+              className="hidden md:block cursor-pointer"
+            />
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-3 text-black bg-white px-12 py-2 rounded-full">

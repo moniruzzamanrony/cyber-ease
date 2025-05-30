@@ -4,7 +4,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 import background from "/image/about-hero.png";
 import navicon from "../../../assets/sdvgf 1.png";
 
-const AboutNavber = ({data}) => {
+const AboutNavber = ({ data }) => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const [opacity, setOpacity] = useState(50); // Default opacity
@@ -22,8 +22,9 @@ const AboutNavber = ({data}) => {
 
   const navItems = [
     { name: "Home", path: "/" },
+     { name: "Services", path: "/service" },
     { name: "About", path: "/about" },
-    { name: "Services", path: "/service" },
+   
     // { name: "Contact", path: "/about#contact-section" },
   ];
 
@@ -38,7 +39,14 @@ const AboutNavber = ({data}) => {
       >
         <div className="w-[90%] mx-auto flex justify-between items-center lg:px-10">
           {/* Logo */}
-          <img src={navicon} alt="Logo" className="hidden md:block" />
+          {/* <img src={navicon} alt="Logo" className="hidden md:block" /> */}
+          <Link to="/">
+            <img
+              src={navicon}
+              alt="Logo"
+              className="hidden md:block cursor-pointer"
+            />
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-3 text-black bg-white px-12 py-2 rounded-full">
