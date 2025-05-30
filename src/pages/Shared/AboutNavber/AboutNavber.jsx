@@ -4,7 +4,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 import background from "/image/about-hero.png";
 import navicon from "../../../assets/sdvgf 1.png";
 
-const AboutNavber = () => {
+const AboutNavber = ({data}) => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const [opacity, setOpacity] = useState(50); // Default opacity
@@ -112,12 +112,13 @@ const AboutNavber = () => {
             Who We Are
           </p>
           <p className="pt-5 lg:leading-loose text-justify">
-            At Cyberease, we are dedicated to safeguarding businesses against
+            {/* At Cyberease, we are dedicated to safeguarding businesses against
             cyber threats. Our team of skilled professionals specializes in
             cybersecurity, IT infrastructure, and cloud security. With a
             customer-centric approach, we help organizations build robust
             security postures through proactive measures and advanced
-            technologies.
+            technologies. */}
+            {data[0]?.whoWeAre}
           </p>
         </div>
       </div>

@@ -11,6 +11,7 @@ import { changeTitleAndFavicon } from "../../../ChangeTitle/ChangeTitle";
 import AboutNav from "../../Shared/AboutNav/AboutNav";
 import Footer from "../../Shared/Footer/Footer";
 import axios from "axios";
+import ListSkeleton from "../../Shared/ListSkeleton";
 
 const Home = () => {
   const [data, setData] = useState(null); // for storing API data
@@ -40,10 +41,14 @@ const Home = () => {
     fetchData();
   }, [apiUrl]);
 
+  if (loading) {
+  return <ListSkeleton></ListSkeleton>;
+}
+
   return (
     <div>
       <AboutNav data={data}></AboutNav>
-      <Exceotional />
+      <Exceotional data={data} />
       <HeroOne />
       <Operational data={data} />
       <HeroTwo />

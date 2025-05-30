@@ -5,7 +5,7 @@ import background from "/image/tach.png";
 import navicon from "../../../assets/sdvgf 1.png";
 
 
-const TachNav= () => {
+const TachNav= ({data}) => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   
@@ -108,8 +108,8 @@ const TachNav= () => {
       Protect<span className="text-[#00643C]">.</span> Secure<span className="text-[#00643C]">.</span> Thrive<span className="text-[#00643C]">.</span>
       </p>
       <p className="pt-5 text-justify text-white drop-shadow-lg lg:pl-32 lg:leading-loose  ">
-      At Cyberease, we stand as an independent technology vendor dedicated to delivering maximum value to our clients. Our best-in-class solutions and accompanying services cover the entire structured product value chain, ensuring comprehensive support at every stage.
-      Our unwavering commitment drives us to consistently benchmark our technologies against evolving client needs and industry standards, staying ahead of market demands and surpassing competitors' offerings.
+      
+       {data[0]?.protectDesc}
       </p>
     </div>
   </div>

@@ -7,8 +7,44 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import footerIcon from "../../../assets/sdvg 1.png";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import ListSkeleton from "../ListSkeleton";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const [data, setData] = useState(null); // for storing API data
+  const [loading, setLoading] = useState(true); // loading state
+  const [error, setError] = useState(null); // error state
+
+  console.log("data", data);
+
+  const apiUrl = import.meta.env.VITE_API_ENDPOINT;
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`${apiUrl}/contact`);
+        console.log("lll", response);
+        setData(response.data);
+      } catch (err) {
+        setError(err.message || "Something went wrong");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, [apiUrl]);
+
+  if (loading) {
+    return <ListSkeleton></ListSkeleton>;
+  }
+
+  const navItems = [
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "/about" },
+    { name: "Service", path: "/service" },
+  ];
   return (
     <footer className="bg-green-900 text-white py-6 md:py-10">
       <div className="w-[90%]  mx-auto px-4 md:px-6">
@@ -24,25 +60,23 @@ const Footer = () => {
           </div>
           <div className="text-center md:text-left text-sm leading-loose">
             <p className="mt-2 md:mt-0">
-              info@cyberease.biz | Phone: +880453785274
+              {data[0]?.email} | Phone: {data[0]?.phoneNumber}
             </p>
-            <p>Level 2, 1120 Mirpur 1, Dhaka 1212</p>
+            <p>{data[0]?.address}</p>
             <p>Bangladesh</p>
           </div>
 
           {/* Navigation Links */}
           <nav className="flex flex-wrap justify-center md:justify-start gap-4 sm:gap-6 text-sm mt-6 md:mt-10">
-            {["Home", "About Us", "Service", "Contact"].map(
-              (item, index) => (
-                <a
-                  key={index}
-                  href="#"
-                  className="font-medium hover:text-gray-300 transition "
-                >
-                  {item}
-                </a>
-              )
-            )}
+            {navItems.map((item, index) => (
+              <Link
+                key={index}
+                to={item.path}
+                className="font-medium hover:text-gray-300 transition"
+              >
+                {item.name}
+              </Link>
+            ))}
           </nav>
         </div>
 
@@ -72,11 +106,29 @@ const Footer = () => {
 
           {/* Social Icons */}
           <div className="flex gap-3 sm:gap-4 mt-4 md:mt-0 text-base">
-            <FaLinkedinIn className="cursor-pointer hover:text-gray-300 transition" />
-            <FaSkype className="cursor-pointer hover:text-gray-300 transition" />
-            <FaFacebookF className="cursor-pointer hover:text-gray-300 transition" />
-            <FaInstagram className="cursor-pointer hover:text-gray-300 transition" />
-            <FaYoutube className="cursor-pointer hover:text-gray-300 transition" />
+            <a
+              href={data[0]?.linkedinLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedinIn className="cursor-pointer hover:text-gray-300 transition" />
+            </a>
+            <a
+              href={data[0]?.facebookLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF className="cursor-pointer hover:text-gray-300 transition" />
+            </a>
+            {/* <FaInstagram className="cursor-pointer hover:text-gray-300 transition" /> */}
+            {/* <FaYoutube className="cursor-pointer hover:text-gray-300 transition" /> */}
+            <a
+              href={data[0]?.youtubeLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaYoutube className="cursor-pointer hover:text-gray-300 transition" />
+            </a>
           </div>
         </div>
       </div>

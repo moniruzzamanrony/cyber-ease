@@ -50,7 +50,7 @@ const MembersShips = ({ data }) => {
         </div>
       </div>
       <div>
-        <p className="text-white w-[80%] md:w-[70%] mx-auto text-center text-justify pt-10">
+        <p className="text-white w-[80%] md:w-[70%] mx-auto  text-justify pt-10">
           {data[0]?.performedSubTitle}
         </p>
       </div>
