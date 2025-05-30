@@ -5,7 +5,7 @@ const SeamLess = ({ data }) => {
   return (
     <div className="w-[90%] mx-auto mt-10 md:mt-20">
       <p
-        className="font-semibold text-[35px] leading-[56px] tracking-[0%]
+        className="font-semibold text-[35px] leading-[56px] tracking-[0%] text-[rgba(0,0,0,0.82)]
 "
       >
         Seamless{" "}

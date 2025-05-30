@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
-import background from "/image/home-hero.png";
+import background from "/image/home.png";
 import navicon from "../../../assets/sdvgf 1.png";
 import mainicon from "../../../assets/mainicon.png";
 

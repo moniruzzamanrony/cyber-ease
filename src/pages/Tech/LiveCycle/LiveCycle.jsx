@@ -21,13 +21,13 @@ const LiveCycle = ({ data }) => {
             Structured Products
           </button>
 
-          <h2 className="text-2xl md:text-5xl font-bold mt-6">Our Services</h2>
+          <h2 className="text-2xl md:text-5xl text-[rgba(255,255,255,0.82)] font-bold mt-6">Our Services</h2>
 
           <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6 ">
             {firstFive.map((item, index) => (
               <div key={index} className="p-2 rounded shadow">
-                <h3 className="text-lg font-semibold ">{item.title}</h3>
-                <p className="text-gray-300">{item.subtitle}</p>
+                <h3 className="text-lg text-[rgba(255,255,255,0.82)] font-semibold ">{item.title}</h3>
+                <p className="text-[rgba(255,255,255,0.82)]">{item.subtitle}</p>
               </div>
             ))}
           </div>
@@ -35,10 +35,10 @@ const LiveCycle = ({ data }) => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 lg:w-2/3 mx-auto mt-3 ">
               {remaining.map((item, index) => (
                 <div key={index} className="p-4 rounded shadow">
-                  <h3 className="text-lg font-semibold ">
+                  <h3 className="text-lg text-[rgba(255,255,255,0.82)] font-semibold ">
                     {item.title}
                   </h3>
-                  <p className="text-gray-300">{item.subtitle}</p>
+                  <p className="text-[rgba(255,255,255,0.82)]">{item.subtitle}</p>
                 </div>
               ))}
             </div>

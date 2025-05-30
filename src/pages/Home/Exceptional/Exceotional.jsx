@@ -9,7 +9,7 @@ const Exceotional = ({ data }) => {
   return (
     <div className="w-[90%] mx-auto mt-10 md:mt-20">
       <p
-        className="font-semibold text-[35px] leading-[56px] tracking-[0%]
+        className="font-semibold text-[35px] leading-[56px] tracking-[0%] text-[rgba(0,0,0,0.82)]
 "
       >
         Why Choose{" "}
@@ -25,7 +25,7 @@ const Exceotional = ({ data }) => {
          Industry-leading <span className="font-bold">security expertise</span>
       </p> */}
       {splitItems.map((item, index) => (
-        <p key={index} className="text-gray-700">
+        <p key={index} className="text-[rgba(0,0,0,0.82)] ">
          ✔ {item}
         </p>
       ))}

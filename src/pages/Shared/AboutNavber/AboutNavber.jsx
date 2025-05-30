@@ -30,7 +30,7 @@ const AboutNavber = ({ data }) => {
 
   return (
     <div
-      className="relative flex items-center justify-center  bg-center h-[700px] text-center"
+      className="relative flex items-center justify-center   bg-center h-[700px] text-center"
       style={{ backgroundImage: `url(${background})` }}
     >
       {/* Navbar with dynamic opacity */}

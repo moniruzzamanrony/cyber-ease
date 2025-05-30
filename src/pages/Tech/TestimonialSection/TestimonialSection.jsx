@@ -1,9 +1,14 @@
 import ListSkeleton from "../../Shared/ListSkeleton";
 
 const TestimonialSection = ({ data,loading }) => {
-    if (loading) {
-    return <ListSkeleton></ListSkeleton>;
-  }
+
+if (loading) {
+  return (
+    <div className="flex items-center justify-center h-screen bg-white">
+      <div className="w-14 h-14 rounded-full border-4 border-t-4 border-t-red-500 border-b-transparent animate-spin shadow-lg"></div>
+    </div>
+  );
+}
   return (
     <div className="w-[90%] mx-auto text-center py-10 md:py-28 px-4">
       {/* Statistics Section */}

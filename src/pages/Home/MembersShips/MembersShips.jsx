@@ -4,23 +4,28 @@ import ListSkeleton from "../../Shared/ListSkeleton";
 
 const MembersShips = ({ data,loading }) => {
 
-    if (loading) {
-  return <ListSkeleton></ListSkeleton>;
+if (loading) {
+  return (
+    <div className="flex items-center justify-center h-screen bg-white">
+      <div className="w-14 h-14 rounded-full border-4 border-t-4 border-t-red-500 border-b-transparent animate-spin shadow-lg"></div>
+    </div>
+  );
 }
+
 
   return (
     <div className="lg:h-[500px]  mt-20 bg-black/95">
-      <div className="flex flex-col md:flex-row md:items-center gap-4 text-white justify-evenly pt-3 md:pt-28  text-center  ">
+      <div className="flex flex-col md:flex-row md:items-center gap-4 text-[rgba(255,255,255,0.82)] justify-evenly pt-3 md:pt-28  text-center  ">
         <div>
           <p
-            className=" font-extrabold text-[40px] leading-[56px] tracking-[0%] 
+            className=" font-extrabold text-[40px] leading-[56px] tracking-[0%] text-[rgba(255,255,255,0.82)]
 "
           >
             {data[0]?.riskCalPerformed}
             m+
           </p>
           <p
-            className=" font-medium text-[10px] 
+            className=" font-medium text-[10px] text-[rgba(255,255,255,0.82)]
 "
           >
             risk calculations performed
@@ -28,13 +33,13 @@ const MembersShips = ({ data,loading }) => {
         </div>
         <div>
           <p
-            className=" font-extrabold text-[40px] leading-[56px] tracking-[0%] 
+            className=" font-extrabold text-[40px] leading-[56px] tracking-[0%] text-[rgba(255,255,255,0.82)]
 "
           >
             {data[0]?.dcGeneratedPerYear}m+
           </p>
           <p
-            className=" font-medium text-[10px] 
+            className=" font-medium text-[10px] text-[rgba(255,255,255,0.82)]
 "
           >
             documents generated per year
@@ -42,13 +47,13 @@ const MembersShips = ({ data,loading }) => {
         </div>
         <div>
           <p
-            className=" font-extrabold text-[40px] leading-[56px] tracking-[0%]
+            className=" font-extrabold text-[40px] leading-[56px] tracking-[0%] text-[rgba(255,255,255,0.82)]
 "
           >
             ~{data[0]?.riskCalPerformed2}%
           </p>
           <p
-            className=" font-medium text-[10px] 
+            className=" font-medium text-[10px] text-[rgba(255,255,255,0.82)]
 "
           >
             risk calculations performed
@@ -56,7 +61,7 @@ const MembersShips = ({ data,loading }) => {
         </div>
       </div>
       <div>
-        <p className="text-white w-[80%] md:w-[70%] mx-auto  text-justify pt-10">
+        <p className="text-white w-[80%] md:w-[70%] mx-auto  text-justify pt-10 text-[rgba(255,255,255,0.82)]">
           {data[0]?.performedSubTitle}
         </p>
       </div>
