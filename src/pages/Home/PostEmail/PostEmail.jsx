@@ -1,11 +1,11 @@
 import { useForm } from "react-hook-form";
 import axios from "axios";
 
-const PostEmail = ({id}) => {
+const PostEmail = () => {
 
 
 
-  console.log("id",id);
+  
   const { register, handleSubmit, reset } = useForm();
 
   const onSubmit = async (data) => {

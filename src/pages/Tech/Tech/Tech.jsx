@@ -7,6 +7,7 @@ import TachNav from "../../Shared/TachNav/TachNav";
 import Footer from "../../Shared/Footer/Footer";
 import axios from "axios";
 import ListSkeleton from "../../Shared/ListSkeleton";
+import { toast } from "react-toastify";
 
 const Tech = () => {
   const [data, setData] = useState([]); // for storing API data
@@ -16,7 +17,7 @@ const Tech = () => {
     changeTitleAndFavicon("service");
   }, []);
 
-  console.log("data", data);
+  
 
   const apiUrl = import.meta.env.VITE_API_ENDPOINT;
   useEffect(() => {
@@ -35,9 +36,9 @@ const Tech = () => {
     fetchData();
   }, [apiUrl]);
 
-  // if (loading) {
-  //   return <ListSkeleton></ListSkeleton>;
-  // }
+  if(error){
+    toast.error(error || "something is wrong");
+  }
   return (
     <div>
       <TachNav data={data}></TachNav>

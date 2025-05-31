@@ -116,21 +116,7 @@ const AboutNav = ({ data }) => {
             className="h-24 mb-4 lg:mr-2 2xl:mr-20"
           />
         </div>
-        {/* <div className="text-white max-w-sm md:max-w-xl lg:max-w-xl 2xl:max-w-3xl p-2 ">
-          <p className="text-3xl md:text-4xl 2xl:text-5xl font-bold mb-2 tracking-wide lg:text-left ">
-            <span className="lg:leading-[60px] ">
-              {data?.headerTitle || 'Loading...'}
-            </span>
-          </p>
 
-          <p className=" pt-5 lg:leading-[30px] text-left  md:text-justify">
-            In today's digital landscape, cybersecurity is not an option—it's a
-            necessity. At Cyberease,we provide cutting-edge cybersecurity and IT
-            solutions to protect your business from ever-evolving threats.Our
-            team of experts ensures your systems remain secure, compliant, and
-            resilient against cyberattacks.
-          </p>
-        </div> */}
         <div className="text-white max-w-sm md:max-w-xl lg:max-w-xl 2xl:max-w-3xl p-2">
           {data?.length > 0 && (
             <>

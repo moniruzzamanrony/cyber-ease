@@ -17,15 +17,7 @@ const Operational = ({ data }) => {
         </span>
         Solutions
       </p>
-      {/* <p className="mt-4 text-[rgba(0,0,0,0.82)]  text-justify">
-      At Cyberease, we design, deploy, and manage our products with unmatched
-        <span className="font-bold"> precision</span>Our cloud
-        strategy delivers{" "}
-        <span className="font-bold">cost-efficient, secure,</span>and resilient hosting to meet the demands of our expanding
-        customer base. Leveraging a hybrid cloud platform, we
-         <span className="font-bold">seamlessly integrate</span>public and private 
-         clouds, managed data centers, and client-facing APIs, ensuring scalability and<span className="font-bold">flexibility at every level.</span>
-      </p> */}
+
       <p className="mt-4 text-[rgba(0,0,0,0.82)]  text-justify">
         {data[0]?.operationalSolutions}
       </p>

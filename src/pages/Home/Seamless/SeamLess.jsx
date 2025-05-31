@@ -17,18 +17,7 @@ const SeamLess = ({ data }) => {
         </span>
         Processing
       </p>
-      {/* <p className="mt-4 text-[rgba(0,0,0,0.82)] text-justify">
-        At Cyberease, precision drives our approach to product development and
-        management, enabling the delivery of STP solutions tailored to our
-        clients' needs. Our
-        <span className="font-bold"> commitment to excellence</span>integrates a
-        suite of advanced solutions,{" "}
-        <span className="font-bold">perfectly aligned</span>and resilient
-        hosting to meet the demands of our expanding customer base. Leveraging a
-        hybrid cloud platform, we
-        <span className="font-bold">seamlessly integrate</span>with the unique
-        and evolving demands of our valued customers.
-      </p> */}
+
       <p className="mt-4 text-[rgba(0,0,0,0.82)] text-justify">
         {data[0]?.seamlessProcessing}
       </p>

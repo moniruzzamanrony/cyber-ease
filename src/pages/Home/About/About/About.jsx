@@ -12,50 +12,21 @@ import Footer from "../../../Shared/Footer/Footer";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
 import ListSkeleton from "../../../Shared/ListSkeleton";
+import { toast } from "react-toastify";
 
 const About = () => {
   const [data, setData] = useState([]); // for storing API data
   const [loading, setLoading] = useState(true); // loading state
   const [error, setError] = useState(null); // error state
 
-  useEffect(() => {
-    changeTitleAndFavicon("about");
-  }, []);
-  const location = useLocation();
-
-  console.log("object", location);
-
-  useEffect(() => {
-    const scrollToHash = () => {
-      if (location.hash) {
-        const target = document.querySelector(location.hash);
-        if (target) {
-          setTimeout(() => {
-            target.scrollIntoView();
-          });
-        }
-      }
-    };
-
-    scrollToHash();
-
-    const unlisten = () => {
-      window.addEventListener("hashchange", scrollToHash);
-    };
-
-    unlisten();
-    return () => window.removeEventListener("hashchange", scrollToHash);
-  }, [location]);
-
-  console.log("data", data);
 
   const apiUrl = import.meta.env.VITE_API_ENDPOINT;
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get(`${apiUrl}/about`);
-        console.log("lll", response);
-        setData(response.data);
+        
+        setData(response?.data);
       } catch (err) {
         setError(err.message || "Something went wrong");
       } finally {
@@ -65,6 +36,11 @@ const About = () => {
 
     fetchData();
   }, [apiUrl]);
+
+  
+    if (error) {
+      toast.error(error || "something is wrong");
+    }
 
 
   return (
@@ -76,7 +52,7 @@ const About = () => {
       {/* <Opsition></Opsition> */}
       {/* <Financial></Financial> */}
       <ESGSection loading={loading} data={data}></ESGSection>
-      <PostEmail id="contact-section"></PostEmail>
+      <PostEmail ></PostEmail>
       <Footer />
     </div>
   );

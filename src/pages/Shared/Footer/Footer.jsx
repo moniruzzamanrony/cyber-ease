@@ -11,11 +11,12 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import ListSkeleton from "../ListSkeleton";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const Footer = () => {
-  const [data, setData] = useState(null); // for storing API data
-  const [loading, setLoading] = useState(true); // loading state
-  const [error, setError] = useState(null); // error state
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   console.log("data", data);
 
@@ -37,7 +38,14 @@ const Footer = () => {
   }, [apiUrl]);
 
   if (loading) {
-    return <ListSkeleton></ListSkeleton>;
+    return (
+      <div className="flex items-center justify-center h-screen bg-white">
+        <div className="w-14 h-14 rounded-full border-4 border-t-4 border-t-red-500 border-b-transparent animate-spin shadow-lg"></div>
+      </div>
+    );
+  }
+  if (error) {
+    toast.error(error || "something is wrong");
   }
 
   const navItems = [

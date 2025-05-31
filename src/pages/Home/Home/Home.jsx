@@ -12,6 +12,7 @@ import AboutNav from "../../Shared/AboutNav/AboutNav";
 import Footer from "../../Shared/Footer/Footer";
 import axios from "axios";
 import ListSkeleton from "../../Shared/ListSkeleton";
+import { toast } from "react-toastify";
 
 const Home = () => {
   const [data, setData] = useState([]); // for storing API data
@@ -22,14 +23,14 @@ const Home = () => {
     changeTitleAndFavicon("home");
   }, []);
 
-  console.log("datdda", error);
+  
 
   const apiUrl = import.meta.env.VITE_API_ENDPOINT;
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get(`${apiUrl}/home`);
-        console.log("lll",response);
+       
         setData(response.data);
       } catch (err) {
         setError(err.message || "Something went wrong");
@@ -40,6 +41,10 @@ const Home = () => {
 
     fetchData();
   }, [apiUrl]);
+
+  if(error){
+    toast.error(error || "something is wrong");
+  }
 
 //   if (loading) {
 //   return <ListSkeleton></ListSkeleton>;
