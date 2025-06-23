@@ -1,5 +1,4 @@
-import React from "react";
-import rightImage from "../../../assets/issuers.png";
+
 
 const Issuers = ({ data }) => {
   const howToHelpText = data[0]?.howToHelp || "";
@@ -16,13 +15,13 @@ const Issuers = ({ data }) => {
             How We Help
           </button>
 
-          <h2 className="text-2xl md:text-3xl font-bold mt-6">Issuers</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mt-6 pl-1">Issuers</h2>
 
           <div className="mt-4 space-y-6">
             {helpItems.map((item, index) => (
               <div key={index} className="">
-                <h3 className="text-lg font-semibold pb-2">{item.title}</h3>
-                <p className="text-gray-300">{item.subtitle}</p>
+                <h3 className="text-lg font-semibold pb-2 pl-1">{item.title}</h3>
+                <p className="text-gray-300 pl-1">{item.subtitle}</p>
               </div>
             ))}
 
@@ -34,16 +33,9 @@ const Issuers = ({ data }) => {
           </h2>
         </div>
 
-        {/* Right Side Image */}
-        <div className="w-full lg:w-1/2 flex justify-center lg:pb-40">
-          <img
-            src={rightImage}
-            alt="Issuers Diagram"
-            className="w-full max-w-lg"
-          />
-        </div>
+
       </div>
-      <hr className="pb-3 w-[90%] mx-auto" />
+      <hr className="pb-3 w-[90%] mx-auto mt-6" />
     </div>
   );
 };

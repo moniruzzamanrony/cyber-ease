@@ -1,5 +1,4 @@
-import React from "react";
-import rightImage from "../../../assets/live.png";
+
 
 const LiveCycle = ({ data }) => {
   const lifeCycleText = data[0]?.lifeCycleAndServices || "";

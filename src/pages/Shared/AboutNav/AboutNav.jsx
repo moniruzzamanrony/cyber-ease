@@ -28,7 +28,7 @@ const AboutNav = ({ data }) => {
       className="relative  bg-cover bg-center h-[650px] md:h-[700px] "
       style={{ backgroundImage: `url(${background})` }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-75"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-20 md:bg-opacity-30 lg:bg-opacity-75"></div>
       {/* Navbar with dynamic opacity */}
       <nav
         className={`absolute top-0 left-0 w-full text-white py-4 px-6 transition-all duration-300  z-10 mt-6 `}
@@ -110,13 +110,7 @@ const AboutNav = ({ data }) => {
 
       {/* Centered Content */}
       <div className="lg:absolute lg:left-40 flex  flex-col lg:flex-row  items-center h-full text-center  pt-20 md:pt-52 lg:pt-0  ">
-        <div>
-          <img
-            src={mainicon}
-            alt="Main Icon"
-            className="h-24 mb-4 lg:mr-2 2xl:mr-20"
-          />
-        </div>
+
 
         <div className="text-white max-w-sm md:max-w-xl lg:max-w-xl 2xl:max-w-3xl p-2">
           {data?.length > 0 && (
