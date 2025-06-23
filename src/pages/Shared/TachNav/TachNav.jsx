@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
-import background from "/image/tach.png";
+import background from "/image/tach.webp";
 import navicon from "../../../assets/sdvgf 1.png";
 
 const TachNav = ({ data }) => {

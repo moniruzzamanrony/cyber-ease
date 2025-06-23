@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
-import background from "/image/home.png";
+import background from "/image/home.webp";
 import navicon from "../../../assets/sdvgf 1.png";
 import mainicon from "../../../assets/mainicon.png";
 
@@ -28,9 +28,10 @@ const AboutNav = ({ data }) => {
       className="relative  bg-cover bg-center h-[650px] md:h-[700px] "
       style={{ backgroundImage: `url(${background})` }}
     >
+      <div className="absolute inset-0 bg-black bg-opacity-75"></div>
       {/* Navbar with dynamic opacity */}
       <nav
-        className={`absolute top-0 left-0 w-full text-white py-4 px-6 transition-all duration-300 mt-6 z-10 `}
+        className={`absolute top-0 left-0 w-full text-white py-4 px-6 transition-all duration-300  z-10 mt-6 `}
       >
         <div className="w-[90%] mx-auto flex justify-between items-center lg:px-10">
           {/* Logo */}
