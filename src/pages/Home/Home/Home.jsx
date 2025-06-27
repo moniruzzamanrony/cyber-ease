@@ -11,7 +11,6 @@ import { changeTitleAndFavicon } from "../../../ChangeTitle/ChangeTitle";
 import AboutNav from "../../Shared/AboutNav/AboutNav";
 import Footer from "../../Shared/Footer/Footer";
 import axios from "axios";
-import ListSkeleton from "../../Shared/ListSkeleton";
 import { toast } from "react-toastify";
 
 const Home = () => {

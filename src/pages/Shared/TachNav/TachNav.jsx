@@ -146,7 +146,7 @@ const TachNav = ({ data }) => {
                 to={item.path}
                 className={`block px-4 py-2  transition-all  duration-300 ${
                   location.pathname === item.path
-                    ? " text-green-900 font-bold border-b-2 border-green-900 "
+                    ? " text-green-900 font-bold  "
                     : "hover:text-green-900"
                 }`}
                 onClick={() => setIsOpen(false)}

@@ -1,5 +1,7 @@
 
-import icon from "/main-logo.svg"
+// import icon from "/main-logo.svg"
+// import icon from "/favicon.ico"
+import icon from "/favicon-96x96.png"
 
 export function changeTitleAndFavicon(page) {
     if (page === 'home') {

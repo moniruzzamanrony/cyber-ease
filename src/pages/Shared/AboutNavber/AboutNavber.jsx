@@ -161,9 +161,9 @@ const AboutNavber = ({ data }) => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`block px-4 py-2  transition-all  duration-300 ${
+                className={`block px-4 py-2  transition-all  duration-300 w-full ${
                   location.pathname === item.path
-                    ? " text-green-900 font-bold border-b-2 border-green-900 "
+                    ? " text-green-900 font-bold  "
                     : "hover:text-green-900"
                 }`}
                 onClick={() => setIsOpen(false)}

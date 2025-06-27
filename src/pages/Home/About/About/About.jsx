@@ -9,15 +9,18 @@ import PostEmail from "../../PostEmail/PostEmail";
 import { changeTitleAndFavicon } from "../../../../ChangeTitle/ChangeTitle";
 import AboutNavber from "../../../Shared/AboutNavber/AboutNavber";
 import Footer from "../../../Shared/Footer/Footer";
-import { useLocation } from "react-router-dom";
 import axios from "axios";
-import ListSkeleton from "../../../Shared/ListSkeleton";
 import { toast } from "react-toastify";
 
 const About = () => {
   const [data, setData] = useState([]); // for storing API data
   const [loading, setLoading] = useState(true); // loading state
   const [error, setError] = useState(null); // error state
+
+    useEffect(() => {
+      changeTitleAndFavicon("about");
+    }, []);
+  
 
 
   const apiUrl = import.meta.env.VITE_API_ENDPOINT;
