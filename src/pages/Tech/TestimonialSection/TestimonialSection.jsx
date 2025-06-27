@@ -16,13 +16,13 @@ if (loading) {
         <div>
           <h2 className="text-3xl font-bold">{data[0]?.edgarValue}</h2>
           <p className="text-sm text-gray-600">
-            EDGAR filings in {data[0]?.edgarYear}
+             {data[0]?.edgarYear}
           </p>
         </div>
         <div>
           <h2 className="text-3xl font-bold">{data[0]?.kidsValue}</h2>
           <p className="text-sm text-gray-600">
-            KIDs created in {data[0]?.kidsYear}
+             {data[0]?.kidsYear}
           </p>
         </div>
         <div>

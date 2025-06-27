@@ -12,6 +12,7 @@ const Tech = () => {
   const [data, setData] = useState([]); // for storing API data
   const [loading, setLoading] = useState(true); // loading state
   const [error, setError] = useState(null); // error state
+
   useEffect(() => {
     changeTitleAndFavicon("service");
   }, []);
@@ -23,7 +24,7 @@ const Tech = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(`${apiUrl}/service`);
-        console.log("lll", response);
+        
         setData(response.data);
       } catch (err) {
         setError(err.message || "Something went wrong");
