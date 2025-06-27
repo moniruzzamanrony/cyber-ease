@@ -1,4 +1,4 @@
-import React from "react";
+
 import background from "../../../assets/image.png";
 import navicon from "../../../assets/sdvgf 1.png";
 import mainicon from "../../../assets/mainicon.png";
