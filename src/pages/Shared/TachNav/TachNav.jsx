@@ -161,12 +161,12 @@ const TachNav = ({ data }) => {
       {/* Centered Content */}
       <div className="w-full flex flex-col justify-center h-full ">
         <div className="text-white max-w-7xl px-6">
-          <p className="text-3xl 2xl:text-5xl font-bold mb-2 tracking-wide text-left drop-shadow-lg lg:pl-32">
+          <p className="text-2xl 2xl:text-4xl font-bold mb-2 tracking-wide text-left drop-shadow-lg lg:pl-32">
             Protect<span className="text-[#00643C]">.</span> Secure
             <span className="text-[#00643C]">.</span> Thrive
             <span className="text-[#00643C]">.</span>
           </p>
-          <p className="pt-5 text-justify text-white drop-shadow-lg lg:pl-32 lg:leading-loose  ">
+          <p className="pt-5 text-justify text-sm text-white drop-shadow-lg lg:pl-32 lg:leading-loose  ">
             {data[0]?.protectDesc}
           </p>
         </div>

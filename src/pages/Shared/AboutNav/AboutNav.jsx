@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 import background from "/image/home.webp";
 import navicon from "../../../assets/sdvgf 1.png";
-import mainicon from "../../../assets/mainicon.png";
+
 
 const AboutNav = ({ data }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -165,13 +165,13 @@ const AboutNav = ({ data }) => {
         <div className="text-white max-w-sm md:max-w-xl lg:max-w-xl 2xl:max-w-3xl p-2">
           {data?.length > 0 && (
             <>
-              <p className="text-3xl md:text-4xl 2xl:text-5xl font-bold mb-2 tracking-wide lg:text-left">
+              <p className="text-2xl md:text-3xl 2xl:text-4xl font-bold mb-2 tracking-wide lg:text-left">
                 <span className="lg:leading-[60px]">
                   {data[0]?.headerTitle}
                 </span>
               </p>
 
-              <p className="pt-5 lg:leading-[30px] text-left md:text-justify">
+              <p className="pt-5 lg:leading-[30px] text-sm  text-left md:text-justify">
                 {data[0]?.headerSubTitle}
               </p>
             </>

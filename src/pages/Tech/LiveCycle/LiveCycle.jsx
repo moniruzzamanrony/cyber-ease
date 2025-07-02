@@ -16,17 +16,15 @@ const LiveCycle = ({ data }) => {
       <div className="w-[90%] mx-auto flex flex-col-reverse md:flex-row items-center gap-10 lg:gap-56">
         {/* Left Content */}
         <div className="w-full ">
-          <button className="bg-[#00643C] text-white px-2 md:px-6 py-2 rounded-full font-medium">
-            Structured Products
-          </button>
 
-          <h2 className="text-2xl md:text-5xl text-[rgba(255,255,255,0.82)] font-bold mt-6">Our Services</h2>
+
+          <h2 className="text-2xl md:text-4xl text-[rgba(255,255,255,0.82)] font-bold mt-6">Our Services</h2>
 
           <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6 ">
             {firstFive.map((item, index) => (
               <div key={index} className="p-2 rounded shadow">
-                <h3 className="text-lg text-[rgba(255,255,255,0.82)] font-semibold ">{item.title}</h3>
-                <p className="text-[rgba(255,255,255,0.82)]">{item.subtitle}</p>
+                <h3 className="text-base text-[rgba(255,255,255,0.82)] font-semibold pb-1">{item.title}</h3>
+                <p className="text-[rgba(255,255,255,0.82)] text-sm">{item.subtitle}</p>
               </div>
             ))}
           </div>

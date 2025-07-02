@@ -32,7 +32,7 @@ if (loading) {
       </div>
 
       {/* Testimonial Text */}
-      <p className="mt-6 text-gray-700 text-lg leading-relaxed text-justify">
+      <p className="mt-6 text-gray-700 text-sm leading-relaxed text-justify">
         {data[0]?.kidsDesc}
       </p>
 

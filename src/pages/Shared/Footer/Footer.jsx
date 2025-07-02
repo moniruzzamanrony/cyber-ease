@@ -54,7 +54,7 @@ const Footer = () => {
     { name: "Service", path: "/service" },
   ];
   return (
-    <footer className="bg-green-900 text-white py-6 md:py-10">
+    <footer className="bg-green-900 text-white py-4 md:py-6">
       <div className="w-[90%]  mx-auto px-4 md:px-6">
         {/* Top Section */}
         <div className="flex flex-col md:flex-row items-center justify-between border-b border-white pb-6 md:pb-6 ">
@@ -95,7 +95,7 @@ const Footer = () => {
           </p>
 
           {/* Policy Links */}
-          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mt-4 md:mt-0">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mt-4 md:mt-0 ">
             {[
               "Cookies",
               "Privacy Policy",

@@ -18,7 +18,7 @@ if (loading) {
       <div className="flex flex-col md:flex-row md:items-center gap-4 text-[rgba(255,255,255,0.82)] justify-evenly pt-3 md:pt-28  text-center  ">
         <div>
           <p
-            className=" font-extrabold text-[40px] leading-[56px] tracking-[0%] text-[rgba(255,255,255,0.82)]
+            className=" font-extrabold text-[35px] leading-[56px] tracking-[0%] text-[rgba(255,255,255,0.82)]
 "
           >
             {data[0]?.riskCalPerformed}
@@ -33,7 +33,7 @@ if (loading) {
         </div>
         <div>
           <p
-            className=" font-extrabold text-[40px] leading-[56px] tracking-[0%] text-[rgba(255,255,255,0.82)]
+            className=" font-extrabold text-[35px] leading-[56px] tracking-[0%] text-[rgba(255,255,255,0.82)]
 "
           >
             {data[0]?.dcGeneratedPerYear}m+
@@ -47,7 +47,7 @@ if (loading) {
         </div>
         <div>
           <p
-            className=" font-extrabold text-[40px] leading-[56px] tracking-[0%] text-[rgba(255,255,255,0.82)]
+            className=" font-extrabold text-[35px] leading-[56px] tracking-[0%] text-[rgba(255,255,255,0.82)]
 "
           >
             ~{data[0]?.riskCalPerformed2}%
@@ -61,7 +61,7 @@ if (loading) {
         </div>
       </div>
       <div>
-        <p className="text-white w-[80%] md:w-[70%] mx-auto  text-justify pt-10 text-[rgba(255,255,255,0.82)]">
+        <p className="text-white w-[80%] md:w-[70%] mx-auto text-sm  text-justify pt-10 text-[rgba(255,255,255,0.82)]">
           {data[0]?.performedSubTitle}
         </p>
       </div>

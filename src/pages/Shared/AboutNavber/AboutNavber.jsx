@@ -186,10 +186,10 @@ const AboutNavber = ({ data }) => {
       {/* Centered Content */}
       <div className="relative z-10 w-full lg:w-[85%] flex flex-col  h-1/2 -mt-32 md:mt-0 ">
         <div className="text-white max-w-5xl px-6">
-          <p className="text-4xl 2xl:text-5xl font-bold mb-2 tracking-wide text-left">
+          <p className="text-3xl 2xl:text-4xl font-bold mb-2 tracking-wide text-left">
             Who We Are
           </p>
-          <p className="pt-5 lg:leading-loose text-justify">
+          <p className="pt-5 lg:leading-loose text-justify text-sm">
             {data[0]?.whoWeAre}
           </p>
         </div>

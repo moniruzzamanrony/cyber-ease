@@ -30,9 +30,9 @@ const PostEmail = () => {
             Speak to one of our experts to learn how we can help you take your
             business to the next level.
           </h2>
-          <button className="mt-6 border border-white rounded-full w-12 h-12 flex items-center justify-center">
+          {/* <button className="mt-6 border border-white rounded-full w-12 h-12 flex items-center justify-center">
             ➜
-          </button>
+          </button> */}
         </div>
 
         {/* Right Side Form */}
@@ -41,17 +41,17 @@ const PostEmail = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* First Name */}
               <div className="flex flex-col">
-                <label className="text-xl mb-1">First Name</label>
+                <label className="text-base mb-1">First Name</label>
                 <input
                   {...register("firstName")}
                   type="text"
-                  className="p-4 focus:outline-none bg-gray-800 text-white  rounded-md w-full"
+                  className="p-4 focus:outline-none bg-gray-800 text-white   rounded-md w-full"
                 />
               </div>
 
               {/* Last Name */}
               <div className="flex flex-col">
-                <label className="text-xl mb-1">Last Name</label>
+                <label className="text-base mb-1">Last Name</label>
                 <input
                   {...register("lastName")}
                   type="text"
@@ -61,7 +61,7 @@ const PostEmail = () => {
 
               {/* Job Title */}
               <div className="flex flex-col">
-                <label className="text-xl mb-1">Job Title</label>
+                <label className="text-base mb-1">Job Title</label>
                 <input
                   {...register("jobTitle")}
                   type="text"
@@ -71,7 +71,7 @@ const PostEmail = () => {
 
               {/* Company */}
               <div className="flex flex-col">
-                <label className="text-xl mb-1">Company</label>
+                <label className="text-base mb-1">Company</label>
                 <input
                   {...register("company")}
                   type="text"
@@ -81,7 +81,7 @@ const PostEmail = () => {
 
               {/* Email Address */}
               <div className="flex flex-col md:col-span-2">
-                <label className="text-xl mb-1">E-mail Address</label>
+                <label className="text-base mb-1">E-mail Address</label>
                 <input
                   {...register("email")}
                   type="email"
