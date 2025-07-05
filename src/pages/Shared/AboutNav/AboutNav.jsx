@@ -64,30 +64,7 @@ const AboutNav = ({ data }) => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-3 text-black bg-white px-12 py-2 rounded-full">
-            {/* 
-            {navItems.map((item) =>
-              item.name === "Contact" ? (
-                <a
-                  key={item.name}
-                  href={item.path}
-                  className={`px-4 py-2 text-base rounded-md transition-all duration-300 hover:text-green-900`}
-                >
-                  {item.name}
-                </a>
-              ) : (
-                <Link
-                  key={item.name}
-                  to={item.path}
-                  className={`px-4 py-2 text-base rounded-md transition-all duration-300 ${
-                    location.pathname === item.path
-                      ? "text-green-900 font-bold"
-                      : "hover:text-green-900"
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              )
-            )} */}
+
 
             <div
               className="relative"
@@ -165,13 +142,13 @@ const AboutNav = ({ data }) => {
         <div className="text-white max-w-sm md:max-w-xl lg:max-w-xl 2xl:max-w-3xl p-2">
           {data?.length > 0 && (
             <>
-              <p className="text-2xl md:text-3xl 2xl:text-4xl font-bold mb-2 tracking-wide lg:text-left">
+              <p className="text-2xl md:text-3xl 2xl:text-4xl font-bold mb-2 tracking-wide text-left">
                 <span className="lg:leading-[60px]">
                   {data[0]?.headerTitle}
                 </span>
               </p>
 
-              <p className="pt-5 lg:leading-[30px] text-sm  text-left md:text-justify">
+              <p className="pt-5 lg:leading-[30px] text-sm  text-left ">
                 {data[0]?.headerSubTitle}
               </p>
             </>

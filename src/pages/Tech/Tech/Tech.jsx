@@ -44,7 +44,7 @@ const Tech = () => {
       <TachNav data={data}></TachNav>
       {/* <Issuers data={data}></Issuers> */}
       <LiveCycle data={data}></LiveCycle>
-      <TestimonialSection loading={loading} data={data}></TestimonialSection>
+      {/* <TestimonialSection loading={loading} data={data}></TestimonialSection> */}
       <Footer />
     </div>
   );

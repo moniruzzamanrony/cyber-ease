@@ -15,7 +15,7 @@ if (loading) {
 
   return (
     <div className="lg:h-[500px]  mt-20 bg-black/95">
-      <div className="flex flex-col md:flex-row md:items-center gap-4 text-[rgba(255,255,255,0.82)] justify-evenly pt-3 md:pt-28  text-center  ">
+      {/* <div className="flex flex-col md:flex-row md:items-center gap-4 text-[rgba(255,255,255,0.82)] justify-evenly pt-3 md:pt-28  text-center  ">
         <div>
           <p
             className=" font-extrabold text-[35px] leading-[56px] tracking-[0%] text-[rgba(255,255,255,0.82)]
@@ -59,13 +59,13 @@ if (loading) {
             risk calculations performed
           </p>
         </div>
-      </div>
+      </div> */}
       <div>
-        <p className="text-white w-[80%] md:w-[70%] mx-auto text-sm  text-justify pt-10 text-[rgba(255,255,255,0.82)]">
+        <p className="text-white w-[80%] md:w-[60%] mx-auto text-sm  text-justify pt-10 text-[rgba(255,255,255,0.82)] flex items-center justify-center bg-slate-900 h-full">
           {data[0]?.performedSubTitle}
         </p>
       </div>
-      <div className="flex items-center justify-center mt-10 gap-3">
+      {/* <div className="flex items-center justify-center mt-10 gap-3">
         <button className="flex items-center p-3  bg-transparent border-2 border-gray-400   transition duration-300 ">
           <FaArrowRightLong className="text-white" />
         </button>
@@ -73,13 +73,13 @@ if (loading) {
         <button className="flex items-center p-3  bg-transparent border-2 border-gray-400   transition duration-300">
           <FaArrowLeft className="text-white" />
         </button>
-      </div>
-      <div className="flex items-center justify-center gap-3 mt-5 pb-5">
+      </div> */}
+      {/* <div className="flex items-center justify-center gap-3 mt-5 pb-5">
         <div className="w-2 h-2 rounded-full border-2 border-white"></div>
         <div className="w-2 h-2 rounded-full border-2 border-white"></div>
         <div className="w-2 h-2 rounded-full border-2 border-white"></div>
         <div className="w-2 h-2 rounded-full border-2 border-white "></div>
-      </div>
+      </div> */}
 
       {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-[90%] mx-auto pb-6  ">
         <div className="rounded-lg shadow-lg">

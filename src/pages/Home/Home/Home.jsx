@@ -57,7 +57,7 @@ const Home = () => {
       <Operational data={data} />
       <HeroTwo />
       <SeamLess data={data} />
-      <MembersShips loading={loading} data={data} />
+      {/* <MembersShips loading={loading} data={data} /> */}
       {/* <Card /> */}
       <PostEmail />
       <Footer />

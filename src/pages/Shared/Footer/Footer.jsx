@@ -54,12 +54,12 @@ const Footer = () => {
     { name: "Service", path: "/service" },
   ];
   return (
-    <footer className="bg-green-900 text-white py-4 md:py-6">
-      <div className="w-[90%]  mx-auto px-4 md:px-6">
+    <footer className="bg-green-900 text-white  md:py-2">
+      <div className="w-[90%]  mx-auto px-4 ">
         {/* Top Section */}
-        <div className="flex flex-col md:flex-row items-center justify-between border-b border-white pb-6 md:pb-6 ">
+        <div className="flex flex-col md:flex-row items-center justify-between border-b border-white pb-2 md:pb-2 p-1 ">
           {/* Logo & Contact */}
-          <div className="text-center md:text-left mb-6 md:mb-0">
+          <div className="text-center md:text-left mb- md:mb-0">
             <img
               src={footerIcon}
               alt="CyberEase Logo"
@@ -75,7 +75,7 @@ const Footer = () => {
           </div>
 
           {/* Navigation Links */}
-          <nav className="flex flex-wrap justify-center md:justify-start gap-4 sm:gap-6 text-sm mt-6 md:mt-10">
+          <nav className="flex flex-wrap justify-center md:justify-start gap-4 sm:gap-6 text-sm mt-2  md:mt-10">
             {navItems.map((item, index) => (
               <Link
                 key={index}
@@ -89,13 +89,13 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="flex flex-col md:flex-row justify-between items-center mt-6 text-xs sm:text-sm">
+        <div className="flex flex-col md:flex-row justify-between items-center mt-2 text-xs sm:text-sm">
           <p className="text-center md:text-left">
-            ©Cyber Ease – all rights reserved 2024
+            ©Cyber Ease – all rights reserved 2025
           </p>
 
           {/* Policy Links */}
-          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mt-4 md:mt-0 ">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mt-4 md:mt-0  ">
             {[
               "Cookies",
               "Privacy Policy",
@@ -113,7 +113,7 @@ const Footer = () => {
           </div>
 
           {/* Social Icons */}
-          <div className="flex gap-3 sm:gap-4 mt-4 md:mt-0 text-base">
+          <div className="flex gap-3 sm:gap-4 mt-2 md:mt-0 text-base pb-1">
             <a
               href={data[0]?.linkedinLink}
               target="_blank"

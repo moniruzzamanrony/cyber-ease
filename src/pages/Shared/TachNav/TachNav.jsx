@@ -166,7 +166,7 @@ const TachNav = ({ data }) => {
             <span className="text-[#00643C]">.</span> Thrive
             <span className="text-[#00643C]">.</span>
           </p>
-          <p className="pt-5 text-justify text-sm text-white drop-shadow-lg lg:pl-32 lg:leading-loose  ">
+          <p className="pt-5 text-left text-sm text-white drop-shadow-lg lg:pl-32 lg:leading-loose  ">
             {data[0]?.protectDesc}
           </p>
         </div>

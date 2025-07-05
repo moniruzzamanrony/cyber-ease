@@ -79,32 +79,6 @@ const AboutNavber = ({ data }) => {
             />
           </Link>
 
-          {/* Desktop Menu */}
-          {/* <div className="hidden md:flex gap-3 text-black bg-white px-12 py-2 rounded-full">
-            {navItems.map((item) =>
-              item.name === "Contact" ? (
-                <a
-                  key={item.name}
-                  href={item.path}
-                  className={`px-4 py-2 text-base rounded-md transition-all duration-300 hover:text-green-900`}
-                >
-                  {item.name}
-                </a>
-              ) : (
-                <Link
-                  key={item.name}
-                  to={item.path}
-                  className={`px-4 py-2 text-base rounded-md transition-all duration-300 ${
-                    location.pathname === item.path
-                      ? "text-green-900 font-bold"
-                      : "hover:text-green-900"
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              )
-            )}
-          </div> */}
           <div
             className="relative md:flex gap-3 text-black bg-white px-12 py-2 rounded-full hidden"
             ref={containerRef}
@@ -189,7 +163,7 @@ const AboutNavber = ({ data }) => {
           <p className="text-3xl 2xl:text-4xl font-bold mb-2 tracking-wide text-left">
             Who We Are
           </p>
-          <p className="pt-5 lg:leading-loose text-justify text-sm">
+          <p className="pt-5 lg:leading-loose text-left text-sm">
             {data[0]?.whoWeAre}
           </p>
         </div>
