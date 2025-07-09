@@ -19,7 +19,7 @@ if (loading) {
       <div className="absolute inset-0 bg-black/60 "></div>
 
       <div className="relative z-10 max-w-3xl text-white pl-2 lg:pl-28 pt-20  ">
-        <h2 className="text-3xl font-bold text-white drop-shadow-lg">ESG</h2>
+        <h2 className="text-3xl font-bold text-white drop-shadow-lg">{data[0]?.esgTitle}</h2>
         <p className="mt-4 text-sm leading-relaxed text-white drop-shadow-lg text-justify px-2 ">
           {data[0]?.esg}
         </p>

@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import { toast } from "react-toastify";
 
 const PostEmail = () => {
 
@@ -8,18 +9,16 @@ const PostEmail = () => {
   
   const { register, handleSubmit, reset } = useForm();
 
-  const onSubmit = async (data) => {
-    try {
-      const response = await axios.post(
-        "https://your-api-endpoint.com/submit",
-        data
-      );
-      console.log("Success:", response.data);
-      reset(); // Reset form after successful submission
-    } catch (error) {
-      console.error("Error submitting form:", error);
-    }
-  };
+const onSubmit = async (data) => {
+  try {
+    await axios.post(import.meta.env.VITE_CONTACT_API_URL, data);
+    toast.success("Message sent successfully!");
+    reset(); // Reset the form
+  } catch (error) {
+    toast.error("Failed to send message. Please try again.");
+  }
+};
+
 
   return (
     <div id="contact-section" className="flex items-center justify-center bg-black text-white   ">
