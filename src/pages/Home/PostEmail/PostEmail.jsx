@@ -26,8 +26,7 @@ const onSubmit = async (data) => {
         {/* Left Side Content */}
         <div className=" mb-6 md:mb-0 flex-1">
           <h2 className="text-2xl md:text-3xl font-light">
-            Speak to one of our experts to learn how we can help you take your
-            business to the next level.
+            Connect with one of our experts to discover how we can help elevate your business.
           </h2>
           {/* <button className="mt-6 border border-white rounded-full w-12 h-12 flex items-center justify-center">
             ➜
@@ -92,9 +91,7 @@ const onSubmit = async (data) => {
             <div className="flex justify-between gap-10">
               {/* Disclaimer */}
               <p className="text-xs text-gray-400 mt-6 max-w-md ">
-                By pressing subscribe you agree to receive newsletters,
-                exclusive personalised events invitations and carefully-curated
-                offers from WSD by Email. You can unsubscribe at any time.
+                Subscribe to receive Cyberease emails with newsletters, event invites and special offers. Unsubscribe anytime.
               </p>
               <button
                 type="submit"

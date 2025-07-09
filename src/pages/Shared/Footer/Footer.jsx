@@ -71,7 +71,6 @@ const Footer = () => {
               {data[0]?.email} | Phone: {data[0]?.phoneNumber}
             </p>
             <p>{data[0]?.address}</p>
-            <p>Bangladesh</p>
           </div>
 
           {/* Navigation Links */}
@@ -99,8 +98,6 @@ const Footer = () => {
             {[
               "Cookies",
               "Privacy Policy",
-              "DE&I",
-              "Modern Slavery Act Statement",
             ].map((item, index) => (
               <a
                 key={index}
